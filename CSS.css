@@ -197,3 +197,16 @@ input {
     right: 0;
     margin: auto;
 }
+
+/*============= Main =============*/
+.main {
+    margin-left: 100px;
+}
+
+#linkedin, #github {
+    fill: var(--skin-color);
+    width: 48px;
+    height: 48px;
+}
+
+
