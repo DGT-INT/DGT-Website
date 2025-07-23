@@ -109,6 +109,17 @@ input {
 }
 
 /*============= LAYOUT =============*/
+.container {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid {
+    display: grid;;
+}
+
+
 /*============= REUSABLE CSS CLASSES =============*/
 /*============= SIDE BAR =============*/
 .social_share {
@@ -209,4 +220,19 @@ input {
     height: 48px;
 }
 
+/*============= Home =============*/
 
+.home_img {
+    width: 550px; 
+    height: auto;
+    border-radius: 20px;
+    display: block; 
+    margin-left: auto;
+    margin-right: 30px; 
+}
+
+.home_container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between; /* image right, text left */
+}
