@@ -223,16 +223,49 @@ input {
 /*============= Home =============*/
 
 .home_img {
-    width: 550px; 
+    width: 350px; 
     height: auto;
     border-radius: 20px;
     display: block; 
     margin-left: auto;
     margin-right: 30px; 
+    transition: 6s;
+    opacity: 75%;
 }
 
 .home_container {
     display: flex;
     align-items: flex-end;
     justify-content: space-between; /* image right, text left */
+}
+
+.home_container {
+    position: relative;
+    height: 100%;
+    align-items: center;
+}
+
+.home_social {
+    position: absolute;
+    top: 1.8rem;
+    left: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.home_social-follow {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--text-color)
+}
+
+#user, #Letter {
+    fill: var(--skin-color);
+    color: var(--skin-color)
+}
+
+.info_item {
+    display: flex;
+    gap: 10px;           /* space between icon and text */
 }
