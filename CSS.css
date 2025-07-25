@@ -183,9 +183,10 @@ input {
     transition: .4s;
 }
 
+/* Logo is not positioning correctly, need to come back to this */
 .btn_share {
     position: absolute;
-    bottom: 2.5rem;
+    bottom: 1.8rem;
     left: 0;
     right: 0;
     text-align: center;
@@ -220,23 +221,30 @@ input {
     height: 48px;
 }
 
-/*============= Home =============*/
-
+/*============= Home Section =============*/
+/*
 .home_img {
+    position: relative;
     width: 350px; 
+    top: 100px;
     height: auto;
     border-radius: 20px;
     display: block; 
     margin-left: auto;
-    margin-right: 30px; 
+    margin-right: 100px; 
     transition: 6s;
     opacity: 75%;
 }
+*/
+.home_img {
+    display: none;
+}
 
-.home_container {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between; /* image right, text left */
+.home {
+    background: url("./Images/Daniel.jpeg") no-repeat right center;
+    background-size: 600px auto;   /* Set width to 300px, height auto */
+    background-color: var(--body-color); /* fallback background */
+    height: 100vh;
 }
 
 .home_container {
@@ -251,21 +259,129 @@ input {
     left: 0;
     display: flex;
     align-items: center;
-    column-gap: 0.5rem;
+    column-gap: 1.5rem;
 }
 
 .home_social-follow {
-    font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
-    color: var(--text-color)
+    position: relative
 }
 
-#user, #Letter {
+.home_social-follow::after {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 2px;
+    background-color: var(--title-color);
+    right: -15%;
+    top: 50%;
+}
+
+.home_social-links {
+    display: inline-flex;
+    column-gap: 1.5rem;
+}
+
+.home_social-link {
+    font-size: 1.08rem;
+    color: var(--text-color);
+    transition: .4s;
+}
+
+.home_social-link:hover {
+    transform: translateY(.55rem);
+}
+
+.home_title {
+    font-size: var(--biggest-font-size);
+}
+
+.home_subtitle {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-75);
+}
+
+.home_description {
+max-width: 450px;
+margin-bottom: var(--mb-2);
+}
+
+#Letter {
     fill: var(--skin-color);
-    color: var(--skin-color)
+    color: var(--skin-color);
+}
+
+#user {
+    fill: white;
 }
 
 .info_item {
     display: flex;
-    gap: 10px;           /* space between icon and text */
+    gap: 10px;          
+}
+
+.my_info {
+    display: flex;
+    column-gap: 1.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 1.8rem;
+}
+
+.info_item {
+    display: flex;
+    align-items: center;
+}
+
+.info_title,
+.info_subtitle {
+    font-size: var(--small-font-size);
+}
+
+.info_title {
+    font-weight: var(--font-medium);
+}
+
+.info_icon {
+    font-size: 1.8rem;
+    color: var(--skin-color);
+    margin-right: var(--mb-0-75);
+    }
+
+/*============= Button =============*/
+.button {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    background-color: var(--skin-color);
+    color: var(--title-color);
+    padding: .75rem 1.4rem;
+    border-radius: 2.25rem;
+    font-weight: var(--font-medium);
+    position: relative;
+    z-index: 1;
+}
+
+.button::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--box-color);
+    z-index: -1;
+    transform-origin: center;
+    transform: scale(0);
+    border-radius: 2.25rem;
+    transition: .4s;
+}
+
+.button:hover::after {
+    transform: scale(1);
+}
+
+.button_icon {
+    font-size: 1.25rem;
 }
