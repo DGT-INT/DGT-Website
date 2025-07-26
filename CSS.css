@@ -121,6 +121,11 @@ input {
 
 
 /*============= REUSABLE CSS CLASSES =============*/
+.section {
+    padding: 6.5rem 0 2rem;
+}
+
+
 /*============= SIDE BAR =============*/
 .social_share {
     width: 200px;
@@ -222,20 +227,6 @@ input {
 }
 
 /*============= Home Section =============*/
-/*
-.home_img {
-    position: relative;
-    width: 350px; 
-    top: 100px;
-    height: auto;
-    border-radius: 20px;
-    display: block; 
-    margin-left: auto;
-    margin-right: 100px; 
-    transition: 6s;
-    opacity: 75%;
-}
-*/
 .home_img {
     display: none;
 }
