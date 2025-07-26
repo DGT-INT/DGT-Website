@@ -116,11 +116,16 @@ input {
 }
 
 .grid {
-    display: grid;;
+    display: grid;
 }
 
 
 /*============= REUSABLE CSS CLASSES =============*/
+.home.section {
+    padding-top: 0;
+}
+
+
 .section {
     padding: 6.5rem 0 2rem;
 }
@@ -233,7 +238,7 @@ input {
 
 .home {
     background: url("./Images/Daniel.jpeg") no-repeat right center;
-    background-size: 600px auto;   /* Set width to 300px, height auto */
+    background-size: 600px auto;   /* Set width to 600px, height auto */
     background-color: var(--body-color); /* fallback background */
     height: 100vh;
 }
