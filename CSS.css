@@ -516,3 +516,25 @@ margin-bottom: var(--mb-2);
     background-color: var(--skin-color);
     color: var(--title-color);
 }
+
+/* Portfolio Popup */
+.portfolio_popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: var(--z-modal);
+    transition: 3s;
+}
+
+.portfolio_popup-inner {
+    background-color: var(--box-color);
+    width: 900px;
+    border-radius: .5rem;
+}

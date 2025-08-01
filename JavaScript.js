@@ -27,3 +27,13 @@ let mixerPortfolio = mixitup('.work_container', {
         duration: 300
     }
 });
+
+/*=========== Link active Work ===========*/
+const linkWork = document.querySelectorAll('.work_item')
+
+function activeWork(){
+    linkWork.forEach(l=> l.classList.remove('active-work'));
+    this.classList.add('active-work');
+}
+
+linkWork.forEach(l=> l.addEventListener('click', activeWork));
