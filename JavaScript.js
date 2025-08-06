@@ -57,3 +57,5 @@ function portfolioItemDetails(portfolioItem) {
     document.querySelector(".portfolio_popup-subtitle span").innerHTML = portfolioItem.querySelector(".work_title").innerHTML;
     document.querySelector(".portfolio_popup-body").innerHTML = portfolioItem.querySelector(".portfolio_item-details").innerHTML;
 }
+
+/*========== INPUT ANIMATIONS ===========*/
