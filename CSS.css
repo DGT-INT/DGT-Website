@@ -207,6 +207,34 @@ input {
     transition: .4s;
 }
 
+.nav_toggle {
+    height: 32px;
+    width: 36px;
+    cursor: pointer;
+    position: fixed;
+    right: 1.5rem;
+    top: 2rem;
+    font-size: 1.2rem;
+    border-radius: .25rem;
+    background-color: var(--skin-color);
+    color: var(--title-color);
+    display: none;
+    /* 
+    i need to center it but i am having issues with it
+    justify-content: center;
+    align-items: center;
+    */
+}
+
+.nav_close {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1.25rem;
+    cursor: pointer;
+    display: none;
+}
+
 /* Logo is not positioning correctly, need to come back to this */
 .btn_share {
     position: absolute;
@@ -754,4 +782,156 @@ textarea.input {
     opacity: 1;
 }
 
+/*========== FOOTER =========*/
+.footer {
+    padding-top: 2rem;
+}
 
+.footer_container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.6rem;
+}
+
+.footer_bg {
+    background-color: var(--box-color);
+    padding: 3rem 0 3.5rem;
+}
+
+.footer_title {
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-0-25);
+}
+
+.footer_subtitle {
+    font-size: var(--small-font-size);
+}
+
+.footer_links {
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.footer_link:hover {
+    color: var(--skin-color);
+}
+
+.footer_socials {
+    justify-self: flex-end;
+}
+
+.footer_social {
+    font-size: 1.25rem;
+    margin-right: var(--mb-1-5);
+}
+
+.footer_social:hover {
+    color: var(--skin-color);
+}
+
+.footer_copy {
+    font-size: var(--smaller-font-size);
+    text-align: center;
+    margin-top: 4.5rem;
+}
+
+.footer_title,
+.footer_subtitle,
+.footer_link,
+.footer_social {
+    color:var(--title-color);
+}
+
+/*========= SCROLL UP ==========*/
+::-webkit-scrollbar {
+    width: .60rem;
+    background-color: var(--scrool-bar-color);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrool-bar-color);
+    border-radius: .5rem;
+}
+
+/*=========== BREAKPOINTS =========*/
+/* For Large Devices */
+@media screen and (max-width:1408px) {
+    .container {
+        margin-left: var(--mb-2-5);
+        margin-right: var(--mb-2-5)
+    }
+}
+
+@media screen and (max-width: 1216px) {
+    .about_container {
+        column-gap: 2.5rem;
+    }    
+
+    .about_description {
+        padding-right: 0;
+    }
+
+    .work_container {
+        grid-template-columns: repeat(2, 330px);
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        margin-left: var(--mb-1-5);
+        margin-right: var(--mb-1-5);
+    }
+
+    .sidebar {
+        width:100%;
+        z-index:999;
+        transform: translateX(-100%);
+    }
+
+    .show-sidebar {
+        transform: translateX(0);
+    }
+
+    .nav_logo,
+    .btn_share {
+        display: none;
+    }
+
+    .nav_menu {
+        height: 100%;
+        width: 100%;
+        transform: rotate(0deg) translateX(0);
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav_list {
+        flex-direction: column;
+        height:100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav_link {
+        padding: 1rem 0;
+        line-height: 1.5;
+    }
+
+    .nal_link.active-link::after, .nav_link:hover::after {
+        bottom: 0;
+    }
+
+    .nav_close {
+        display: block;
+    }
+
+    .nav_toggle {
+        display: flex;
+    }
+
+     .main {
+        margin-left: 0;
+    }
+} 

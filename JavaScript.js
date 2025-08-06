@@ -77,3 +77,36 @@ inputs.forEach((input) => {
     input.addEventListener("focus", focusFunc);
     input.addEventListener("blur", blurFunc);
 })
+
+/*============ SCROLL SECTIONS ACTIVE LINK ===============*/    /* I NEED TO COME BACK TO THIS SCROLL BAR ISSUE */
+// get all sections that have an id defined
+const sections = document.querySelectorAll("section[id]");
+
+// add an event Listener Listening for scroll
+window.addEventListener("scroll", navHighlighter);
+
+function navHighlighter()
+{
+// get current scroll position
+let scrollY = window.pageYOffset;
+// Now we loop through sections to get height, top and ID values for each
+sections.forEach(current => {
+const sectionHeight = current.offsetHeight;
+const sectionTop = current.offsetTop - 50,
+sectionId = current.getAttribute("id");
+/* - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation Link, else remove it
+- To know which Link needs an active class, we use sectionid variable we are getting while Looping through sections as an selector */
+if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight)
+{
+document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add("active-Link");
+}
+else
+{
+document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove("active-Link");
+}
+})
+}
+
+
+
+
