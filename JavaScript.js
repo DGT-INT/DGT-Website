@@ -108,5 +108,26 @@ document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove(
 }
 
 
+/*============= SHOW SIDEBAR =============== */
+const navMenu = document.getElementById('sidebar'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close')
+
+/*==== SIDEBAR SHOW ====*/
+/* Validate if constant exisit */
+if(navToggle) {
+    navToggle.addEventListener("click", () => {
+        navMenu.classList.add('show-sidebar')
+    })
+}
+
+/*==== SIDEBAR HIDDEN ====*/
+/* Validate if constant exisit */
+if(navClose) {
+    navClose.addEventListener("click", () => {
+        navMenu.classList.remove('show-sidebar')
+    })
+}
+
 
 
