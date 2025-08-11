@@ -434,6 +434,7 @@ margin-bottom: var(--mb-2);
 
 .about_img {
     width: 480px;
+    height: auto;
     border-radius: 1.5rem;
     justify-self: center;
 }
