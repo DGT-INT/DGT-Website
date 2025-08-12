@@ -9,7 +9,8 @@ var typed = new Typed(".typing",{
     */
 document.addEventListener("DOMContentLoaded", function() {
     var typed = new Typed(".typing",{
-        strings:["Data Scientist", "Data Analyst", "Machine Learning Engineer", "Web Developer"],
+        strings:["Data Scientist", "Data Analyst", "Machine Learning Engineer",
+            "Business Inteligence Developer", "AI Engineer", "Quantitative Researcher", "Web Developer"],
         typeSpeed: 100,
         backSpeed: 60,
         backDelay: 1200,   // Pause before erasing
