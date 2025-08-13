@@ -156,7 +156,7 @@ input {
     position: fixed;
     width: 100px;
     height: 100vh;
-    background-color: var(--body-color);
+    background-color: rgb(21, 20, 20);
     transition: .5s;
 }
 
@@ -853,7 +853,7 @@ textarea.input {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--scrool-bar-color);
+    background-color: var(--scrool-thumb-color);
     border-radius: .5rem;
 }
 
