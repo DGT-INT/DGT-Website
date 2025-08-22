@@ -317,18 +317,18 @@ input {
     top: 50%;
 }
 
-.home_social-links {
+.home_social-links, .footer_social-link {
     display: inline-flex;
     column-gap: 1.5rem;
 }
 
-.home_social-link {
+.home_social-link, .footer_social-link {
     font-size: 1.08rem;
     color: var(--text-color);
     transition: .4s;
 }
 
-.home_social-link:hover {
+.home_social-link:hover, .footer_social-link:hover {
     transform: translateY(.55rem);
 }
 
@@ -1076,7 +1076,7 @@ textarea.input {
         justify-self: center;
     }
 
-    .home_social {
+    .home_social, .footer_socials {
         left: initial;
         right: -1rem;
         flex-direction: column;
@@ -1088,7 +1088,7 @@ textarea.input {
         transform: rotate(90deg);
     }
 
-    .home_social-links {
+    .home_social-links, .footer_social-link {
         flex-direction: column;
         row-gap: .25rem;
     }

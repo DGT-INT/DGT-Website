@@ -1,14 +1,18 @@
 // Type Animation
-/*
-var typed = new Typed(".typing",{
-    strings:["", "web Designer", "Web Developer", "Graphic Designer", "Data Scientist"],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true
-})
-    */
 document.addEventListener("DOMContentLoaded", function() {
-    var typed = new Typed(".typing",{
+    var typed = new Typed(".typing1",{
+        strings:["Data Scientist", "Data Analyst", "Machine Learning Engineer",
+            "Business Inteligence Developer", "AI Engineer", "Quantitative Researcher", "Web Developer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        backDelay: 1200,   // Pause before erasing
+        startDelay: 300,  // Pause before typing starts
+        loop: true
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    var typed = new Typed(".footer_subtitle",{
         strings:["Data Scientist", "Data Analyst", "Machine Learning Engineer",
             "Business Inteligence Developer", "AI Engineer", "Quantitative Researcher", "Web Developer"],
         typeSpeed: 100,
