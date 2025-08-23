@@ -479,6 +479,64 @@ margin-bottom: var(--mb-2);
     font-size: var(--smaller-font-size);
 }
 
+/*============= Skills Section =============*/
+.skills {
+  padding: 4rem 2rem;
+}
+
+.section_title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color:  hsl(139, 93%, 24%);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.skills_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.skills_content {
+  background-color: lightgray;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 8px 8px 8px hsl(139, 93%, 24%);
+  transition: transform 0.2s ease;
+}
+
+.skills_content:hover {
+  transform: translateY(-10px);
+}
+
+.skills_title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: hsl(139, 93%, 24%);
+}
+
+/* Skill list */
+.skills_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills_item {
+  background: rgb(124, 168, 124); 
+  color: var(--box-color);      
+  padding: 0.5rem 0.75rem;
+  margin: 0.35rem 0;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  display: inline-block;
+}
+
+
 /*============= Work Section =============*/
 .work_container {
     grid-template-columns: repeat(3, 330px);
