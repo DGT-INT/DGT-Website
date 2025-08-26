@@ -103,11 +103,11 @@ sectionId = current.getAttribute("id");
 - To know which Link needs an active class, we use sectionid variable we are getting while Looping through sections as an selector */
 if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight)
 {
-document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add("active-Link");
+document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add("active-link");
 }
 else
 {
-document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove("active-Link");
+document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove("active-link");
 }
 })
 }
