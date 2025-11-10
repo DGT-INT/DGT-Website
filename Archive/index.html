@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DGT-International</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--========== Unicorns ==========-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--========== SWIPER ==========-->
+    <link rel="stylesheet" href="">
+
+    <!--========== MAIN CSS ==========-->
+    <link rel="stylesheet" href="./CSS.css">
+
+    
+</head>
+
+<body>
+    <div id="page">
+     </div>
+     
+
+    <!--========== SIDEBAR =========-->
+    <div class="nav_toggle" id="nav-toggle">
+        <i class="uil uil-bars">
+            <svg xmlns="http://www.w3.org/2000/svg" id="bars">
+                <path d="M1664 1344v128q0 26-19 45t-45 19H192q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19H192q-26 0-45-19t-19-45V832q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19H192q-26 0-45-19t-19-45V320q0-26 19-45t45-19h1408q26 0 45 19t19 45z"></path>
+            </svg>
+        </i>
+    </div>
+     <aside class = "sidebar" id="sidebar">
+        <nav class="nav">
+            <div class="nav_logo">
+                <a href="HTML.html" class="nav_logo-text">DGT</a>
+            </div>
+
+            <div class="nav_menu">
+                <div class="menu">
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="#home" class="nav_link active-link">Home</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#about" class="nav_link">About</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#skills" class="nav_link">Skills</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#work" class="nav_link">Portfolio</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#contact" class="nav_link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn_share">
+                <img src="./images/Logo background Removed.png" alt="Share Logo" class="uis uis-share-alt social_share" />
+            </div>
+
+            <div class="nav_close" id="nav-close">
+                <i class="uil uil-times">
+                    <!-- i think an icon goes here-->
+                </i>
+            </div>
+        </nav>
+     </aside>
+
+    <!--========== MAIN =========-->
+    <main class="main">
+
+    <!--========== HOME =========-->
+    <section class="home section" id="home">
+        <div class="home_container container grid">
+
+            <div class= "home_social">
+                <span class="home_social-follow">Connect with me & explore my work</span>
+                <div class="home_social-links"></div>
+                <a href="https://www.linkedin.com/in/daniel-tshiani/" target="_blank" class="home_social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="1.786 1.783 287.865 76.248" id="linkedin">
+                        <path d="M213.882 7.245c0-3.015 2.508-5.462 5.6-5.462h64.568c3.093 0 5.6 2.447 5.6 5.462V72.57c0 3.016-2.507 5.461-5.6 5.461h-64.568c-3.092 0-5.6-2.445-5.6-5.46V7.244z"></path>
+                        <path d="M1.785 65.652h31.62V55.27H13.23V15.665H1.785v49.987zM49.414 65.652v-34.43H37.97v34.43h11.444zm-5.721-39.13c3.99 0 6.474-2.644 6.474-5.95-.074-3.378-2.484-5.947-6.398-5.947-3.915 0-6.475 2.57-6.475 5.947 0 3.306 2.484 5.95 6.324 5.95h.075zM54.727 65.652h11.444V46.424c0-1.029.074-2.058.377-2.791.826-2.056 2.709-4.186 5.871-4.186 4.142 0 5.799 3.158 5.799 7.784v18.42H89.66V45.91c0-10.576-5.646-15.497-13.176-15.497-6.173 0-8.884 3.451-10.39 5.802h.077v-4.993H54.727c.151 3.231 0 34.43 0 34.43zM105.805 15.665H94.361v49.987h11.444V54.489l2.86-3.601 8.96 14.764h14.078l-15.056-21.373 13.174-14.54h-13.776s-9.411 13.008-10.24 14.552V15.665z"></path>
+                        <path d="M162.306 51.29c.151-.884.377-2.58.377-4.498 0-8.9-4.518-17.936-16.413-17.936-12.724 0-18.597 10.063-18.597 19.19 0 11.288 7.153 18.337 19.65 18.337 4.97 0 9.561-.732 13.327-2.275l-1.506-7.558c-3.088 1.024-6.25 1.537-10.164 1.537-5.345 0-10.012-2.195-10.389-6.871l23.715.072v.002zm-23.79-7.742c.301-2.938 2.26-7.273 7.153-7.273 5.194 0 6.4 4.628 6.4 7.273h-13.552zM190.93 15.665v17.304h-.151c-1.657-2.422-5.12-4.038-9.71-4.038-8.81 0-16.564 7.05-16.49 19.094 0 11.164 7.003 18.435 15.735 18.435 4.744 0 9.26-2.058 11.52-6.024h.225l.453 5.216h10.163c-.15-2.424-.302-6.61-.302-10.723V15.664h-11.444zm0 34.05c0 .88-.075 1.763-.227 2.495-.675 3.16-3.386 5.361-6.699 5.361-4.742 0-7.83-3.818-7.83-9.84 0-5.654 2.637-10.208 7.906-10.208 3.538 0 6.022 2.423 6.7 5.433.15.663.15 1.398.15 2.058v4.7z"></path>
+                        <path fill="#fff" d="M236.85 65.61V31.18h-11.444v34.43h11.445zm-5.72-39.13c3.99 0 6.474-2.644 6.474-5.948-.075-3.379-2.484-5.949-6.398-5.949-3.917 0-6.475 2.57-6.475 5.949 0 3.304 2.483 5.948 6.324 5.948h.074zM243.184 65.61h11.443V46.385c0-1.028.075-2.058.377-2.792.827-2.057 2.71-4.186 5.872-4.186 4.14 0 5.797 3.157 5.797 7.786V65.61h11.443V45.869c0-10.575-5.645-15.496-13.174-15.496-6.173 0-8.884 3.45-10.39 5.8h.076v-4.992h-11.443c.149 3.23-.001 34.43-.001 34.43z"></path>
+                    </svg>
+                </a>
+
+                <a href="https://github.com/DGT-INT" target="_blank" class="home_social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" id="github">
+                        <path d="M64 1.512c-23.493 0-42.545 19.047-42.545 42.545 0 18.797 12.19 34.745 29.095 40.37 2.126.394 2.907-.923 2.907-2.047 0-1.014-.04-4.366-.058-7.92-11.837 2.573-14.334-5.02-14.334-5.02-1.935-4.918-4.724-6.226-4.724-6.226-3.86-2.64.29-2.586.29-2.586 4.273.3 6.523 4.385 6.523 4.385 3.794 6.504 9.953 4.623 12.38 3.536.383-2.75 1.485-4.628 2.702-5.69-9.45-1.075-19.384-4.724-19.384-21.026 0-4.645 1.662-8.44 4.384-11.42-.442-1.072-1.898-5.4.412-11.26 0 0 3.572-1.142 11.7 4.363 3.395-.943 7.035-1.416 10.65-1.432 3.616.017 7.258.49 10.658 1.432 8.12-5.504 11.688-4.362 11.688-4.362 2.316 5.86.86 10.187.418 11.26 2.728 2.978 4.378 6.774 4.378 11.42 0 16.34-9.953 19.938-19.427 20.99 1.526 1.32 2.886 3.91 2.886 7.88 0 5.692-.048 10.273-.048 11.674 0 1.13.766 2.458 2.922 2.04 16.896-5.632 29.07-21.574 29.07-40.365C106.545 20.56 87.497 1.512 64 1.512z"></path>
+                        <path d="M37.57 62.596c-.095.212-.428.275-.73.13-.31-.14-.482-.427-.382-.64.09-.216.424-.277.733-.132.31.14.486.43.38.642zm-.524-.388M39.293 64.52c-.203.187-.6.1-.87-.198-.278-.297-.33-.694-.124-.884.208-.188.593-.1.87.197.28.3.335.693.123.884zm-.406-.437M40.97 66.968c-.26.182-.687.012-.95-.367-.262-.377-.262-.83.005-1.013.264-.182.684-.018.95.357.262.385.262.84-.005 1.024zm0 0M43.268 69.336c-.233.257-.73.188-1.093-.163-.372-.343-.475-.83-.242-1.087.237-.257.736-.185 1.102.163.37.342.482.83.233 1.086zm0 0M46.44 70.71c-.104.334-.582.485-1.064.344-.482-.146-.796-.536-.7-.872.1-.336.582-.493 1.067-.342.48.144.795.53.696.87zm0 0M49.92 70.965c.013.35-.396.642-.902.648-.508.012-.92-.272-.926-.618 0-.354.4-.642.908-.65.506-.01.92.272.92.62zm0 0M53.16 70.414c.06.342-.29.694-.793.787-.494.092-.95-.12-1.014-.46-.06-.35.297-.7.79-.792.503-.088.953.118 1.017.466zm0 0"></path>
+                        <path d="M24.855 108.302h-10.7a.5.5 0 0 0-.5.5v5.232a.5.5 0 0 0 .5.5h4.173v6.5s-.937.32-3.53.32c-3.056 0-7.327-1.116-7.327-10.508 0-9.393 4.448-10.63 8.624-10.63 3.614 0 5.17.636 6.162.943.31.094.6-.216.6-.492l1.193-5.055a.468.468 0 0 0-.192-.39c-.403-.288-2.857-1.66-9.058-1.66-7.144 0-14.472 3.038-14.472 17.65 0 14.61 8.39 16.787 15.46 16.787 5.854 0 9.405-2.502 9.405-2.502.146-.08.162-.285.162-.38v-16.316a.5.5 0 0 0-.5-.5zM79.506 94.81H73.48a.5.5 0 0 0-.498.503l.002 11.644h-9.392V95.313a.5.5 0 0 0-.497-.503H57.07a.5.5 0 0 0-.498.503v31.53c0 .277.224.503.498.503h6.025a.5.5 0 0 0 .497-.504v-13.486h9.392l-.016 13.486c0 .278.224.504.5.504h6.038a.5.5 0 0 0 .497-.504v-31.53c0-.278-.22-.502-.497-.502zM32.34 95.527c-2.144 0-3.884 1.753-3.884 3.923 0 2.167 1.74 3.925 3.884 3.925 2.146 0 3.885-1.758 3.885-3.925 0-2.17-1.74-3.923-3.885-3.923zM35.296 105.135H29.29c-.276 0-.522.284-.522.56v20.852c0 .613.382.795.876.795h5.41c.595 0 .74-.292.74-.805v-6.346-14.553a.5.5 0 0 0-.498-.502zM102.902 105.182h-5.98a.5.5 0 0 0-.496.504v15.46s-1.52 1.11-3.675 1.11-2.727-.977-2.727-3.088v-13.482a.5.5 0 0 0-.497-.504h-6.068a.502.502 0 0 0-.498.504v14.502c0 6.27 3.495 7.804 8.302 7.804 3.944 0 7.124-2.18 7.124-2.18s.15 1.15.22 1.285c.07.136.247.273.44.273l3.86-.017a.502.502 0 0 0 .5-.504l-.003-21.166a.504.504 0 0 0-.5-.502zM119.244 104.474c-3.396 0-5.706 1.515-5.706 1.515V95.312a.5.5 0 0 0-.497-.503H107a.5.5 0 0 0-.5.503v31.53a.5.5 0 0 0 .5.503h4.192c.19 0 .332-.097.437-.268.103-.17.254-1.454.254-1.454s2.47 2.34 7.148 2.34c5.49 0 8.64-2.784 8.64-12.502s-5.03-10.988-8.428-10.988zm-2.36 17.764c-2.073-.063-3.48-1.004-3.48-1.004v-9.985s1.388-.85 3.09-1.004c2.153-.193 4.228.458 4.228 5.594 0 5.417-.935 6.486-3.837 6.398zM53.195 122.12c-.263 0-.937.107-1.63.107-2.22 0-2.973-1.032-2.973-2.368v-8.866h4.52a.5.5 0 0 0 .5-.504v-4.856a.5.5 0 0 0-.5-.502h-4.52l-.007-5.97c0-.227-.116-.34-.378-.34h-6.16c-.238 0-.367.106-.367.335v6.17s-3.087.745-3.295.805a.5.5 0 0 0-.36.48v3.877a.5.5 0 0 0 .497.503h3.158v9.328c0 6.93 4.86 7.61 8.14 7.61 1.497 0 3.29-.48 3.586-.59.18-.067.283-.252.283-.453l.004-4.265a.51.51 0 0 0-.5-.502z"></path>
+                    </svg>
+                </a>
+
+                <a href="Resume.pdf" target="_blank" class="home_social-link"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 64 64" viewBox="0 0 64 64" id="cv">
+                        <path d="M54.14,0H9.86C8.21,0,6.86,1.35,6.86,3v58c0,1.65,1.35,2.99,2.99,2.99h19c0,0,0,0,0.01,0c0,0,0,0,0.01,0h25.27c1.65,0,2.99-1.34,2.99-2.99V3C57.14,1.35,55.8,0,54.14,0z M7.85,61.01V3c0-1.11,0.91-2.02,2.01-2.02h18.51v62.03H9.86C8.75,63.01,7.85,62.11,7.85,61.01z M56.15,61.01c0,1.1-0.91,2.01-2.01,2.01H29.36V0.98h24.79c1.1,0,2.01,0.91,2.01,2.02V61.01z"></path>
+                        <path d="M25.73 5.92H10.71c-.27 0-.49.22-.49.49v15.33c0 .28.23.49.49.49h15.02c.27 0 .49-.22.49-.49V6.41C26.22 6.13 25.99 5.92 25.73 5.92zM15.78 14.46v-.03c.02-.42.16-.8.38-1.05.08-.09.16-.16.25-.23.25-.18.57-.28.93-.28h.09c.7.03 1.24-.07 1.56-.27.32-.14.79-.26 1.1-.05.3.19.47.67.5 1.34v2.02c0 1.33-1.09 2.42-2.43 2.42-.31 0-.59-.06-.86-.16-.03-.01-.06-.02-.09-.03-.01-.01-.03-.02-.04-.02-.85-.38-1.44-1.23-1.44-2.21L15.78 14.46zM18.88 19.63c0 .36-.3.65-.66.65-.35 0-.65-.29-.65-.65v-.36c.2.04.39.06.59.06.25 0 .48-.03.72-.08V19.63zM25.24 21.25h-1.04c-.45-1.26-1.65-2.11-3.01-2.11h-1.32v-.28c1.02-.58 1.71-1.68 1.71-2.94v-1.93c.45-1.08.56-2.61-.11-3.39-.32-.36-.75-.52-1.25-.45-1.23-.9-2.64-1.21-3.89-.86-1.15.32-2.05 1.21-2.52 2.48-.05.13-.04.27.02.39.06.12.17.21.3.25.11.04.2.09.29.17.13.12.21.32.24.54l.16 1.36v.02l-.05 1.42c0 1.31.75 2.45 1.83 3.01v.21h-1.32c-1.35 0-2.56.87-3.01 2.11h-1.04V6.9h14.03V21.25zM15.03 28.77c.62 0 1.22.23 1.69.65.2.18.51.16.7-.04.18-.2.16-.51-.04-.7-.65-.58-1.48-.9-2.35-.9-1.94 0-3.52 1.58-3.52 3.52s1.58 3.52 3.52 3.52c.86 0 1.7-.32 2.35-.9.2-.18.22-.49.04-.7-.18-.2-.49-.22-.7-.04-.47.42-1.07.65-1.69.65-1.4 0-2.53-1.14-2.53-2.54S13.63 28.77 15.03 28.77zM22.18 34.82C22.18 34.82 22.18 34.82 22.18 34.82c.21 0 .39-.13.46-.32l2.26-6.05c.09-.25-.03-.54-.29-.63-.25-.09-.54.03-.63.29l-1.8 4.82-1.82-4.83c-.1-.25-.38-.38-.63-.29-.25.1-.38.38-.29.63l2.29 6.05C21.79 34.7 21.98 34.82 22.18 34.82zM23.97 39.49H12.48c-.78 0-1.41.63-1.41 1.41v3.15c0 .78.63 1.41 1.41 1.41h11.49c.78 0 1.42-.63 1.42-1.41V40.9C25.38 40.12 24.74 39.49 23.97 39.49zM23.97 49.65H12.48c-.78 0-1.41.64-1.41 1.42v3.14c0 .78.63 1.42 1.41 1.42h11.49c.78 0 1.42-.64 1.42-1.42v-3.14C25.38 50.29 24.74 49.65 23.97 49.65zM51.75 6.67H32.92c-.27 0-.49.22-.49.49 0 .27.22.49.49.49h18.83c.27 0 .49-.22.49-.49C52.25 6.89 52.03 6.67 51.75 6.67zM51.75 13.77H32.92c-.27 0-.49.22-.49.49 0 .27.22.49.49.49h18.83c.27 0 .49-.22.49-.49C52.25 13.99 52.03 13.77 51.75 13.77zM51.75 20.86H32.92c-.27 0-.49.22-.49.49 0 .27.22.49.49.49h18.83c.27 0 .49-.22.49-.49C52.25 21.08 52.03 20.86 51.75 20.86zM51.75 27.96H32.92c-.27 0-.49.22-.49.49 0 .27.22.49.49.49h18.83c.27 0 .49-.22.49-.49C52.25 28.18 52.03 27.96 51.75 27.96zM51.75 35.06H32.92c-.27 0-.49.22-.49.49 0 .27.22.49.49.49h18.83c.27 0 .49-.22.49-.49C52.25 35.28 52.03 35.06 51.75 35.06zM51.75 42.15H32.92c-.27 0-.49.22-.49.49s.22.49.49.49h18.83c.27 0 .49-.22.49-.49S52.03 42.15 51.75 42.15zM51.75 49.25H32.92c-.27 0-.49.22-.49.49 0 .27.22.49.49.49h18.83c.27 0 .49-.22.49-.49C52.25 49.47 52.03 49.25 51.75 49.25zM51.75 56.35H32.92c-.27 0-.49.22-.49.49 0 .27.22.49.49.49h18.83c.27 0 .49-.22.49-.49C52.25 56.57 52.03 56.35 51.75 56.35z"></path>
+                    </svg>
+                </a>
+            </div>
+        
+            <img src="./Images/Daniel.jpeg" alt="" class="home_img" />
+
+
+            <div class="home_data">
+                <h1 class="home_title">Hello, my name is <span class="name"> Daniel</span></h1>
+                <h3 class="home_subtitle">I am a <span class="typing1"></span></h3>
+                <p class="home_description">
+                     If you have data and need to make sense of it, I can help. I specialize in machine learning, data analysis, and visualization 
+                     to uncover stories hidden in numbers and data.
+                </p>
+                <a href="#about" class="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" id="user">
+                        <path d="M12.5 0C5.602 0 0 5.602 0 12.5S5.602 25 12.5 25 25 19.398 25 12.5 19.398 0 12.5 0zm0 .969c6.378 0 11.563 5.153 11.563 11.531 0 6.378-5.185 11.531-11.563 11.531A11.519 11.519 0 0 1 .969 12.5 11.519 11.519 0 0 1 12.5.969zm-.5 5V6c-1.653 0-3 1.347-3 3v2c0 .934.422 1.762 1.094 2.313a5.646 5.646 0 0 0-3.75 5.156c0 .261.238.5.5.5L17.156 19a.52.52 0 0 0 .5-.531c-.024-.899-.288-1.722-.687-2.469l-.657.688-.125.125c.165.385.316.756.375 1.187H7.47c.335-2.242 2.2-4.005 4.5-4.031H12c.053 0 .104.003.156 0 .308.01.619.059.906.125v-.031l.063-.22.156-.155A3.03 3.03 0 0 0 15 10.967v-2c0-1.653-1.347-3-3-3zM12 7c1.117 0 2 .883 2 2v2c0 1.062-.805 1.888-1.844 1.969-.089 0-.162-.01-.25 0C10.842 12.913 10 12.079 10 11V9c0-1.117.883-2 2-2zm8.094 1a.917.917 0 0 0-.657.281l-1 1-4.875 4.844-1.124 3.438 3.437-1.125 5.219-5.22.625-.655a.96.96 0 0 0 0-1.344l-.938-.938A.99.99 0 0 0 20.094 8zm0 1.031.875.875-.594.594-.875-.875.594-.594zm-1.313 1.313.875.875-3.906 3.906-.875-.875 3.906-3.906zm-4.468 4.75.593.594L14 16l.313-.906z"></path>
+                    </svg>
+                    More about Me <!-- I need to come back to this -->
+                </a>
+            </div>
+
+            <div class="my_info">
+                <div class="info_item">
+                    <svg width="25px" height="25px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" id="Letter" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g>
+                            <path d="M371.518,232.8H38.647v50.149h10v-35.408L188.73,348.063c4.892,3.51,10.622,5.265,16.354,5.265     c5.73,0,11.463-1.755,16.354-5.265l57.081-40.961l-5.83-8.125l-57.081,40.962c-6.296,4.517-14.754,4.517-21.048-0.001     L59.191,242.8h291.782l-47.104,33.802l5.83,8.125l51.818-37.185v175.462l-108.436-84.558l-6.148,7.886l105.051,81.918H58.187     l105.044-81.918l-6.15-7.886L48.647,423.007V302.238h-10V438.25h332.87V232.8z"/>
+                            <rect height="9.999" transform="matrix(0.8124 -0.5831 0.5831 0.8124 -115.389 224.6395)"/>
+                        </g>            
+                        <g>
+                            <path d="M205.443,118.265h-17.819v-16.7c0-9.826,7.994-17.819,17.819-17.819s17.819,7.993,17.819,17.819v113.181h10V101.564     c0-6.775-2.437-12.989-6.477-17.819h213.747c12.583,0,22.819,11.597,22.819,25.851v318.66h-73.684v9.999h83.684V109.596     c0-19.769-14.723-35.851-32.819-35.851h-235.09c-15.34,0-27.819,12.479-27.819,27.819v26.7h27.819V118.265z"/>
+                        </g>
+                    </svg>
+
+                    <div>
+                        <h3 class="info_title">Email</h3>
+                        <span class="info_subtitle">Info@DGT-International.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--========== ABOUT =========-->
+    <section class= "about section" id="about">
+        <h2 data-heading="My Intro" class="section_title">About Me</h2>
+        
+        <div class="about_container container grid">
+            <!--need to edit the size of the image-->
+            <img src="./Images/Daniel_about.jpeg" alt="" class="about_img">
+
+            <div class="about_data">
+                <h3 class="about_heading">Hi, I'm Daniel Tshiani. I am based in Baltimore, Maryland.</h3>
+                <p class="about_description">
+                    If you have data and need to make sense of it, I can help. I focus on turning messy data into clear, actionable insights. 
+                    My work spans data mining, modeling, natural language processing, and machine learning to build solutions that help people and organizations 
+                    make better decisions. Whether it’s developing predictive models or creating interactive dashboards, my goal is to make data easy to understand 
+                    and use. I am currently completing my Master’s in Data Science at American University and graduating in December 2025. I serve as
+                    a Teaching Assistant, helping students master key concepts in data science. I am also serving as a Data Visualization Specialist at RIPIL.
+                     Take a look at my portfolio to see what i've been working on.
+                </p>
+                <div class="about_info grid">
+                    <div class="about_box">
+                        <!-- Award icon goes here-->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="briefcase" width="25" height="25" class="about_icon">
+                            <g>
+                                <path fill="hsl(139, 93%, 24%)" d="M28 14v.26L17.47 17.5a4.914 4.914 0 0 1-2.94 0L4 14.26V14H2v1a1.008 1.008 0 0 0 .71.96l11.23 3.45a7 7 0 0 0 4.12 0l11.23-3.45A1.008 1.008 0 0 0 30 15v-1Z"></path>
+                                <path fill="hsl(139, 93%, 24%)" d="M27 7h-4V6a3 3 0 0 0-3-3h-8a3 3 0 0 0-3 3v1H5a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h22a3 3 0 0 0 3-3V10a3 3 0 0 0-3-3ZM11 6a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v1H11Zm17 20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1h22a1 1 0 0 1 1 1Z"></path>
+                            </g>
+                        </svg>
+                        <h3 class="about_title">Experience</h3>
+                        <span class="about_subtitle">2 + Years</span>
+                    </div>
+
+                     <div class="about_box">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewbox="0 0 48 48" id="time" class="about_icon">
+                            <g>
+                                <path d="M24 0C10.751 0 0 10.751 0 24s10.751 24 24 24 24-10.751 24-24S37.249 0 24 0zm0 1.012c12.702 0 22.988 10.286 22.988 22.988S36.702 46.99 24 46.99 1.012 36.702 1.012 24C1.012 11.298 11.298 1.012 24 1.012zM13.5 9a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h.5v24h-.5a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h21a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5H34V12h.5a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-21zm.5 1h20v1H14v-1zm1 2h2.002v5.219c0 3.317 2.354 6.018 5.478 6.718v1.176c-3.124.7-5.48 3.404-5.48 6.721V36h-2V12zm3.002 0h12.016v5.219c0 2.985-2.18 5.426-5.057 5.877a.5.5 0 0 0-.422.486.5.5 0 0 0 0 .01v1.873a.5.5 0 0 0 .414.492.5.5 0 0 0 .008 0c2.876.451 5.057 2.891 5.057 5.877V36H18v-4.166c0-.187.009-.373.025-.555.25-2.73 2.335-4.9 5.032-5.322a.5.5 0 0 0 .423-.494V23.59a.5.5 0 0 0-.423-.494c-2.877-.451-5.055-2.892-5.055-5.877V12zm13.016 0H33v24h-1.982v-4.166c0-.207-.01-.413-.028-.615-.27-3.033-2.522-5.45-5.45-6.106V23.938c3.123-.7 5.478-3.402 5.478-6.72V12zm-11.553.998V13a.466.466 0 0 0-.467.465v4.111a.466.466 0 0 0 .037.182c.124 2.397 1.76 4.394 3.969 4.863.342.073.43.193.482.281.052.09.05.121.05.121a.466.466 0 0 0 .929 0s-.004-.03.049-.119c.052-.089.145-.212.494-.287 2.204-.473 3.83-2.466 3.955-4.86a.466.466 0 0 0 .039-.183V13.463a.466.466 0 0 0-.467-.465h-9.07zm.465.934h8.14v3.582a.466.466 0 0 0-.006.056c-.039 2.063-1.433 3.75-3.252 4.14-.414.09-.61.32-.812.532-.2-.21-.393-.442-.803-.53-1.822-.386-3.222-2.076-3.261-4.142a.466.466 0 0 0-.006-.06V13.932zm4.082 17.607v.002a.466.466 0 0 0-.032 0 .466.466 0 0 0-.431.352h-.002c-.04.039-.203.162-.65.255a5.468 5.468 0 0 0-3.247 2.073.466.466 0 0 0 .371.746h7.958a.466.466 0 0 0 .37-.746 5.468 5.468 0 0 0-3.247-2.073c-.447-.093-.61-.217-.649-.255h-.002a.466.466 0 0 0-.44-.354zM24 32.646c.215.163.453.32.912.415.723.15 1.342.52 1.895.974h-5.614c.552-.453 1.17-.824 1.893-.974.46-.096.7-.252.914-.415zM14 37h20v1H14v-1z" fill="hsl(139, 93%, 24%)" font-family="sans-serif" font-weight="400" letter-spacing="0" overflow="visible"></path>
+                            </g>
+                        </svg>
+                        <h3 class="about_title">Completed</h3>
+                        <span class="about_subtitle">10 + Projects</span>
+                    </div>
+
+                     <div class="about_box">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="hsl(139, 93%, 24%)" width="35" height="35" viewBox="0 0 48 48" id="online">
+                            <path d="M44,40.544H42.352a3.467,3.467,0,0,0,.675-2.048v-8.7a6.041,6.041,0,0,0-5.065-5.978l-2.322-.387A1.724,1.724,0,0,1,34.2,21.755l-.028-1.719a3.826,3.826,0,0,0,2.114-3.408V11.7a4.97,4.97,0,0,0-4.264-4.9l-8-1.117a.5.5,0,0,0-.5.74l1.449,2.57H23.472a.5.5,0,0,0-.415.78l2.7,4.008v2.848a3.825,3.825,0,0,0,2.065,3.382L27.8,21.755a1.734,1.734,0,0,1-1.443,1.675l-2.316.39a6.04,6.04,0,0,0-4.067,2.635H9a.5.5,0,0,0-.486.618l3.271,13.471H4a.5.5,0,0,0,0,1h8.028l.1.4a.5.5,0,0,0,.486.381H39.166a.5.5,0,0,0,.42-.228.457.457,0,0,0,.036-.108,3.464,3.464,0,0,0,1.591-.443H44a.5.5,0,0,0,0-1ZM26.761,16.628v-3a.34.34,0,0,0-.009-.046.538.538,0,0,0-.058-.191c-.008-.014-.009-.03-.018-.043L24.412,9.992h1.114l.067.118a.5.5,0,0,0,.871-.491L24.881,6.812l7,.977a3.966,3.966,0,0,1,3.4,3.911v4.928a2.84,2.84,0,0,1-2.837,2.836H29.6A2.839,2.839,0,0,1,26.761,16.628ZM24.2,24.807l2.32-.39A2.737,2.737,0,0,0,28.8,21.771l.02-1.386a3.9,3.9,0,0,0,.777.079h2.851a3.81,3.81,0,0,0,.729-.074l.022,1.382a2.723,2.723,0,0,0,2.276,2.643L37.8,24.8a5.045,5.045,0,0,1,4.229,4.992v8.7a2.5,2.5,0,0,1-2.5,2.5h-.184l-.355-.79a1.5,1.5,0,0,0-1.368-.886H29.405l-.247-1.158a85.969,85.969,0,0,1,9.867-1.169.5.5,0,0,0,.475-.524.506.506,0,0,0-.525-.475c-.011,0-.244.013-.638.04V31.059a.5.5,0,1,0-1,0v5.048c-1.88.15-5.125.47-8.387,1.077l-2.2-10.333a.5.5,0,0,0-.489-.4H21.229A5.036,5.036,0,0,1,24.2,24.807ZM13,41.323,9.636,27.455h16.22l2.655,12.469a.5.5,0,0,0,.489.4h8.62a.5.5,0,0,1,.456.3l.318.708ZM24.785,29.33a.5.5,0,0,1-.5.5H21.694a.5.5,0,0,1,0-1h2.591A.5.5,0,0,1,24.785,29.33ZM8.118,21.6c1.74.092,4.646.067,5.509.057A18.537,18.537,0,0,0,17,25a.51.51,0,0,0,.269.078.5.5,0,0,0,.489-.4c.011-.047.237-1.134.592-3.317a4.276,4.276,0,0,0,2.729-.749,2.83,2.83,0,0,0,1.04-2.1c.136-1.8.375-7.756-2.3-8.91-2.087-.9-12.02-1.053-13.65.36C4.5,11.41,4.016,13.711,4.39,18.453,4.534,20.279,5.962,21.484,8.118,21.6ZM6.82,10.72c1.094-.949,10.514-1.1,12.6-.2,1.542.665,1.967,4.455,1.7,7.916a1.85,1.85,0,0,1-.663,1.388,3.691,3.691,0,0,1-2.456.5.5.5,0,0,0-.567.416c-.216,1.348-.391,2.334-.506,2.951a23.608,23.608,0,0,1-2.673-2.853.5.5,0,0,0-.393-.191h-.008c-.037,0-3.7.052-5.687-.053-1.664-.088-2.678-.9-2.783-2.225C4.993,13.377,5.643,11.74,6.82,10.72Zm2.91,8.97a.5.5,0,0,0,.5-.5v-1.4a1.933,1.933,0,0,1,1.445-1.866L12,15.839a1.877,1.877,0,0,0,.934.255h.589a1.876,1.876,0,0,0,.923-.249l.336.079A1.934,1.934,0,0,1,16.24,17.79v1.4a.5.5,0,0,0,1,0v-1.4a2.929,2.929,0,0,0-2.01-2.765,1.885,1.885,0,0,0,.2-.836V12.746a1.907,1.907,0,0,0-1.906-1.905h-.589a1.907,1.907,0,0,0-1.906,1.905v1.443a1.9,1.9,0,0,0,.2.835,2.926,2.926,0,0,0-2,2.766v1.4A.5.5,0,0,0,9.73,19.69Zm2.3-6.944a.907.907,0,0,1,.906-.905h.589a.907.907,0,0,1,.906.905v1.443a.907.907,0,0,1-.906.9h-.589a.907.907,0,0,1-.906-.9Z"></path>
+                        </svg>
+
+                        <h3 class="about_title">Support status</h3>
+                        <span class="about_subtitle">Currently accepting new work</span>
+                    </div>
+                </div>
+                <a href="#work" class="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" viewBox="0 0 422.738 422.737" class="button_icon">
+                        <path d="M211.369,0C94.819,0,0,94.819,0,211.368c0,116.55,94.819,211.369,211.369,211.369
+		                    c116.549,0,211.37-94.819,211.37-211.369C422.738,94.819,327.918,0,211.369,0z M211.369,403.355
+	                    	c-105.862,0-191.986-86.125-191.986-191.987c0-105.861,86.125-191.986,191.986-191.986s191.987,86.125,191.987,191.986
+		                    C403.355,317.23,317.23,403.355,211.369,403.355z">
+                        </path>
+                        <path d="M221.453,356.859l-37.241-122.766l-122.783-27.64l255.436-103.826L221.453,356.859z
+		                    M107.916,202.616l87.287,19.652l27.649,91.157l69.762-185.878L107.916,202.616z">
+                        </path>
+                    </svg>
+                     Check out my portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--========== SKILLS =========-->
+    <section class="skills section" id="skills">
+        <h2 data-heading="My Skills" class="section_title">Tech Stack</h2>
+
+        <div class="skills_container container grid">
+            <div class="skills_content">
+                <h3 class="skills_title">Programming Languages</h3>
+                <ul class="skills_list">
+                    <li class="skills_item">Python</li>
+                    <li class="skills_item">R</li>
+                    <li class="skills_item">STATA</li>
+                    <li class="skills_item">SQL</li>
+                    <li class="skills_item">HTML</li>
+                    <li class="skills_item">CSS</li>
+                    <li class="skills_item">JavaScript</li>
+                </ul>
+            </div>
+
+            <div class="skills_content">
+                <h3 class="skills_title">Machine Learning & AI</h3>
+                <ul class="skills_list">
+                    <li class="skills_item">Supervised Learning (Regression, Classification, Decision Trees / Random Forests, Lasso, SVM)</li>
+                    <li class="skills_item">Unsupervised Learning (Clustering, PCA)</li>
+                    <li class="skills_item">Deep Learning,</li>
+                    <li class="skills_item">GANs</li>
+                    <li class="skills_item">GNNs</li>
+                    <li class="skills_item">Tensor/Matrix Factorization</li>
+                </ul>
+            </div>
+
+            <div class="skills_content">
+                <h3 class="skills_title">Knowledge Areas</h3>
+                <ul class="skills_list">
+                    <li class="skills_item">Computer Vision</li>
+                    <li class="skills_item">NLP</li>
+                    <li class="skills_item">Data Analysis</li>
+                    <li class="skills_item">Statistical Methods (Discriminant Analaysis, Splines, Bootstrap)</li>
+                </ul>
+            </div>
+
+            <div class="skills_content">
+                <h3 class="skills_title">Data Visualization</h3>
+                <ul class="skills_list">
+                    <li class="skills_item">Tableau</li>
+                    <li class="skills_item">Power BI</li>
+                </ul>
+            </div>
+
+            <div class="skills_content">
+                <h3 class="skills_title">Tools and Technologies</h3>
+                <ul class="skills_list">
+                    <li class="skills_item">Git & GitHub</li>
+                    <li class="skills_item">Excel</li>
+                </ul>
+            </div>
+
+            <div class="skills_content">
+                <h3 class="skills_title">Languages</h3>
+                <ul class="skills_list">
+                    <li class="skills_item">English</li>
+                    <li class="skills_item">French</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!--========== WORK =========-->
+    <section class="work section" id="work">
+        <h2 data-heading="My Portfolio" class="section_title">Recent Works</h2>
+
+        <div class="work_filters">
+            <span class="work_item active-work" data-filter="all">All</span>
+            <span class="work_item" data-filter=".data_science">Data Science</span>
+            <span class="work_item" data-filter=".data_visualization">Data Visualization</span>
+            <span class="work_item" data-filter=".machine_learning">Machine Learning</span>
+            <span class="work_item" data-filter=".web_development">Web Development</span>
+            <span class="work_item" data-filter=".archived_projects">Archived Projects</span>
+        </div>
+
+        <div class="work_container container grid">            
+            
+            <div class="work_card mix web_development">
+                <img src="./Images/Logo.png" alt="" class="work_img">
+                <h3 class="work_title">
+                    DGT-International Portfolio Website
+                </h3>
+                <span class="work_button">Learn more
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="right-arrow" class="work_button-icon" width="25" height="25" fill="hsl(139, 93%, 24%)">
+                        <path d="M17.92,11.62a1,1,0,0,0-.21-.33l-5-5a1,1,0,0,0-1.42,1.42L14.59,11H7a1,1,0,0,0,0,2h7.59l-3.3,3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5a1,1,0,0,0,.21-.33A1,1,0,0,0,17.92,11.62Z"></path>
+                    </svg>
+                </span>
+                <div class="portfolio_item-details">
+                    <h3 class= "details_title">Designing and Developing a Personal Website</h3>
+                    <p class="details_description">
+                       I designed and developed my personal portfolio website to showcase my data science, analytics, 
+                       and web development work. Built with HTML, CSS, JavaScript, and TypeScript, the site features an interactive, 
+                       filterable project gallery, responsive design, and integrations for downloadable resources. The goal was to create a clean, 
+                       user-friendly platform that highlights both technical skills and professional experience 
+                       while serving as a central hub for my projects and publications.
+                    </p>
+                    <ul class= "details_info">
+                        <li>Created - <span>September 2025</span></li>
+                        <li>Technologies - <span>HTML, CSS, JavaScript</span></li>
+                        <li>Role - <span>Full-Stack Developer & Designer (Personal Project)</span></li>
+                        <li>View - <span><a href= "#">Click here to...</a></span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="work_card mix machine_learning">
+                <img src="./Images/credit_cards.jpg" alt="" class="work_img">
+                <h3 class="work_title">
+                    Predicting Credit Card Approvals: A Machine Learning Study
+                </h3>
+                <span class="work_button">Learn more
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="right-arrow" class="work_button-icon" width="25" height="25" fill="hsl(139, 93%, 24%)">
+                        <path d="M17.92,11.62a1,1,0,0,0-.21-.33l-5-5a1,1,0,0,0-1.42,1.42L14.59,11H7a1,1,0,0,0,0,2h7.59l-3.3,3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5a1,1,0,0,0,.21-.33A1,1,0,0,0,17.92,11.62Z"></path>
+                    </svg>
+                </span>
+                <div class="portfolio_item-details">
+                    <h3 class= "details_title">Classification Models for Risk Assessment and Fair Decision-Making</h3>
+                    <p class="details_description">
+                       Developed a machine learning workflow to predict credit card approval decisions using applicant data such as income, 
+                       employment status, and credit history. Implemented data preprocessing, exploratory analysis, and multiple classification models including 
+                       logistic regression, decision trees, random forests, and gradient boosting. Evaluated model performance with cross-validation, 
+                       mean squared error, and test error rates, selecting the most accurate approach while addressing class imbalance and ensuring interpretability. 
+                       Assessed fairness across sensitive attributes and examined the ethical implications of automated financial decision-making. 
+                       Findings were presented in an informative session combining technical insights with practical recommendations.
+                    </p>
+                    <ul class= "details_info">
+                        <li>Completed - <span>May 2025</span></li>
+                        <li>Technologies - <span>R Studio</span></li>
+                        <li>Role - <span>Data Scientist (Academic Project- American University)</span></li>
+                        <li>View - <span><a href= "#contact">This project will be updated and published at a later date but get in touch with me to learn more if interested</a></span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="work_card mix data_visualization">
+                <img src="./Images/work_RIPIL_network.png" alt="" class="work_img">
+                <h3 class="work_title">
+                    Networks of Influence and Support Between War and Peace
+                </h3>
+                <span class="work_button">Learn more
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="right-arrow" class="work_button-icon" width="25" height="25" fill="hsl(139, 93%, 24%)">
+                        <path d="M17.92,11.62a1,1,0,0,0-.21-.33l-5-5a1,1,0,0,0-1.42,1.42L14.59,11H7a1,1,0,0,0,0,2h7.59l-3.3,3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5a1,1,0,0,0,.21-.33A1,1,0,0,0,17.92,11.62Z"></path>
+                    </svg>
+                </span>
+                <div class="portfolio_item-details">
+                    <h3 class= "details_title">Interactive Network Visualization of Peacebuilding Actors and Relationships</h3>
+                    <p class="details_description">
+                       Designed and developed an interactive web application to visualize international actor networks in fragile and conflict-affected states. 
+                       Built using JavaScript, HTML, and the Cityscape.js library, the app allows users to toggle between datasets, countries, organization types, 
+                       and sectors to explore the structure and dynamics of peacebuilding networks across regions. Responsible for website development, 
+                       data preprocessing, and network visualization, I worked to highlight how formal contracts, informal relationships, 
+                       and coordination meetings between international, state, and non-state actors relate to indicators of conflict and peace over time.
+                    </p>
+                    <ul class= "details_info">
+                        <li>Created - <span>August 2025</span></li>
+                        <li>Technologies - <span>HTML, JavaScript</span></li>
+                        <li>Role - <span>Full-Stack Developer & Data Visualization Specialist (Research Implementation on International Policy Lab)</span></li>
+                        <li>View - <span><a href= "#contact">Live Demo coming soon!!!</a></span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="work_card mix web_development">
+                <img src="./Images/SoccerAnalytics.png" alt="" class="work_img">
+                <h3 class="work_title">
+                    MLS Soccer Player Recruitment Evaluation App
+                </h3>
+                <span class="work_button">Learn more
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="right-arrow" class="work_button-icon" width="25" height="25" fill="hsl(139, 93%, 24%)">
+                        <path d="M17.92,11.62a1,1,0,0,0-.21-.33l-5-5a1,1,0,0,0-1.42,1.42L14.59,11H7a1,1,0,0,0,0,2h7.59l-3.3,3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5a1,1,0,0,0,.21-.33A1,1,0,0,0,17.92,11.62Z"></path>
+                    </svg>
+                </span>
+                <div class="portfolio_item-details">
+                    <h3 class= "details_title">Interactive R Shiny Tool for Soccer Player Recruitment based in the United States</h3>
+                    <p class="details_description">
+                       Developed an interactive R Shiny application for soccer scouts, fans, and coaches to explore and facilitate player discovery. 
+                       Integrated an external API to retrieve real-time player statistics, with filtering options for key performance indicators. 
+                       The app generates custom visualizations of metrics such as goals, assists, and other offensive actions, and incorporates a regression model 
+                       to estimate player salaries to determine if they are currently overpaid or underpaid. Designed to support data-driven recruitment decisions, the tool combines exploratory data analysis with predictive modeling 
+                       in an accessible, user-friendly interface.
+                    </p>
+                    <ul class= "details_info">
+                        <li>Created - <span>April 2025</span></li>
+                        <li>Technologies - <span>R Studio</span></li>
+                        <li>Role - <span>Data Scientist & R Shiny Developer (Academic Project – American University)</span></li>
+                        <li>View - <span><a href= "#contact">live demo coming soon</a></span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="work_card mix data_science">
+                <img src="./Images/pascofi.jpg" alt="" class="work_img">
+                <h3 class="work_title">
+                    Le Projet d’Appui à la Scolarisation des Filles Affectées par le Conflit (PASCOFI)
+                </h3>
+                <span class="work_button">Learn more
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="right-arrow" class="work_button-icon" width="25" height="25" fill="hsl(139, 93%, 24%)">
+                        <path d="M17.92,11.62a1,1,0,0,0-.21-.33l-5-5a1,1,0,0,0-1.42,1.42L14.59,11H7a1,1,0,0,0,0,2h7.59l-3.3,3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5a1,1,0,0,0,.21-.33A1,1,0,0,0,17.92,11.62Z"></path>
+                    </svg>
+                </span>
+                <div class="portfolio_item-details">
+                    <h3 class= "details_title">Evaluating Education Access for Conflict-Affected Girls in Mali</h3>
+                    <p class="details_description">
+                       Contributed to the evaluation of PASCOFI, an initiative aimed at improving educational access and outcomes for girls affected 
+                       by conflict in Mali. Supported data collection and analysis efforts to assess program effectiveness in increasing school enrollment, 
+                       attendance, and retention. Responsibilities included cleaning and validating student and school-level data, generating summary statistics, 
+                       and producing visualizations to communicate findings to project stakeholders. Collaborated with multilingual teams to ensure accurate 
+                       interpretation of context-specific education indicators and to inform recommendations for scaling program interventions in conflict-affected 
+                       regions.
+                    </p>
+                    <ul class= "details_info">
+                        <li>Contributed - <span>July 2025</span></li>
+                        <li>Technologies - <span>STATA, Excel</span></li>
+                        <li>Role - <span>Education Data Analyst (American Institutes for Research)</span></li>
+                        <li>View - <span><a href= "#">Click here to...</a></span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="work_card mix data_science">
+                <img src="./Images/citizen_math.jpg" alt="" class="work_img">
+                <h3 class="work_title">
+                    Citizen Math Impact Evaluation
+                </h3>
+                <span class="work_button">Learn more
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="right-arrow" class="work_button-icon" width="25" height="25" fill="hsl(139, 93%, 24%)">
+                        <path d="M17.92,11.62a1,1,0,0,0-.21-.33l-5-5a1,1,0,0,0-1.42,1.42L14.59,11H7a1,1,0,0,0,0,2h7.59l-3.3,3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5a1,1,0,0,0,.21-.33A1,1,0,0,0,17.92,11.62Z"></path>
+                    </svg>
+                </span>
+                <div class="portfolio_item-details">
+                    <h3 class= "details_title">Assessing Middle School Math Outcomes through Mixed-Methods Evaluation</h3>
+                    <p class="details_description">
+                       Contributed to a U.S. Department of Education–funded evaluation of Citizens Math lessons in middle school classrooms, 
+                       conducted by the American Institutes for Research as a subcontractor to WestEd. The project assessed the program’s impact on students’ 
+                       math skills and perceptions of the subject. My responsibilities included tracking participating schools, automating the extraction 
+                       and processing of district administrative records, and cleaning and analyzing student and teacher survey data, managing communications 
+                       with district coordinators and school representatives, and conducting preliminary quality checks.
+                    </p>
+                    <ul class= "details_info">
+                        <li>Contributed - <span>July 2025</span></li>
+                        <li>Technologies - <span>R Studio, STATA, and Excel</span></li>
+                        <li>Role - <span>Education Data Analyst (American Institutes for Research for U.S. Department of Education, subcontracted to WestEd)</span></li>
+                        <li>View - <span><a href= "#">Click here to...</a></span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="work_card mix data_science">
+                <img src="./Images/teacher_development.webp" alt="" class="work_img">
+                <h3 class="work_title">
+                    Strengthening Teacher Professional Development for Multilingual Foundational Learning at Scale
+                </h3>
+                <span class="work_button">Learn more
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="right-arrow" class="work_button-icon" width="25" height="25" fill="hsl(139, 93%, 24%)">
+                        <path d="M17.92,11.62a1,1,0,0,0-.21-.33l-5-5a1,1,0,0,0-1.42,1.42L14.59,11H7a1,1,0,0,0,0,2h7.59l-3.3,3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5a1,1,0,0,0,.21-.33A1,1,0,0,0,17.92,11.62Z"></path>
+                    </svg>
+                </span>
+                <div class="portfolio_item-details">
+                    <h3 class= "details_title">Randomized Controlled Trial Evaluation in Côte d’Ivoire, Democratic Republic of Congo, and Senegal</h3>
+                    <p class="details_description">
+                       As part of an IDRC-funded partnership between the American Institutes for Research and Dalberg, 
+                       I contributed to a large-scale randomized controlled trial evaluating the impact of FLIP programming on multilingual foundational learning. 
+                       My work included designing quantitative research instruments, collecting data through teacher surveys, student assessments, and classroom observations, 
+                       and analyzing teacher and student outcomes using OLS regression with covariates for precision. I supported sample selection, power calculations, 
+                       and the adaptation of validated tools to measure educational outcomes in multilingual contexts. 
+                       I also drafted sections of the inception report and actively participated in multilingual (English/French) team meetings to ensure effective collaboration.
+                    </p>
+                    <ul class= "details_info">
+                        <li>Contributed - <span>July 2025</span></li>
+                        <li>Technologies - <span>STATA, Excel</span></li>
+                        <li>Role - <span>Education Data Analyst (American Institutes for Research for IDRC in partnership with Dalberg)</span></li>
+                        <li>View - <span><a href= "https://www.gpekix.org/project/strengthening-teacher-professional-development-multilingual-foundational-learning-scale">Click here to learn more on GPEKIX's website</a></span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="work_card mix data_science">
+                <img src="./Images/Sri_Lankan_school.jpg" alt="" class="work_img">
+                <h3 class="work_title">
+                    Promoting Autonomy for Literacy and Attentiveness through Market Alliances
+                </h3>
+                <span class="work_button">Learn more
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="right-arrow" class="work_button-icon" width="25" height="25" fill="hsl(139, 93%, 24%)">
+                        <path d="M17.92,11.62a1,1,0,0,0-.21-.33l-5-5a1,1,0,0,0-1.42,1.42L14.59,11H7a1,1,0,0,0,0,2h7.59l-3.3,3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5a1,1,0,0,0,.21-.33A1,1,0,0,0,17.92,11.62Z"></path>
+                    </svg>
+                </span>
+                <div class="portfolio_item-details">
+                    <h3 class= "details_title">Midline Evaluation of Literacy, Health, and Nutrition Outcomes through a Randomized Controlled Trial</h3>
+                    <p class="details_description">
+                       As part of a mixed-methods evaluation for Save the Children and the American Institutes for Research, 
+                       I contributed to assessing the PALAM/A program’s impact on student literacy, health, and nutrition in Sri Lanka. 
+                       My work included analyzing literacy assessments, health and nutrition surveys, and school meal provider cost surveys. 
+                       I quantified changes in outcomes using randomized controlled trial data, providing evidence to inform program effectiveness and policy decisions.
+                    </p>
+                    <ul class= "details_info">
+                        <li>Contributed - <span>August 2024</span></li>
+                        <li>Technologies - <span>STATA, Microsoft Excel</span></li>
+                        <li>Role - <span>Quantitative Research Assistant (American Institute for Research for Save the Children)</span></li>
+                        <li>View - <span><a href= "https://pdf.usaid.gov/pdf_docs/PA00ZJD2.pdf">Click here to view the full report USAID's website</a></span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="work_card mix data_science">
+                <img src="./Images/Coalition.jpg" alt="" class="work_img">
+                <h3 class="work_title">
+                    24/7 Access Makes the Difference: After-Hours Access to Emergency Departments is Critical in Supporting Patients and Communities
+                </h3>
+                <span class="work_button">Learn more
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="right-arrow" class="work_button-icon" width="25" height="25" fill="hsl(139, 93%, 24%)">
+                        <path d="M17.92,11.62a1,1,0,0,0-.21-.33l-5-5a1,1,0,0,0-1.42,1.42L14.59,11H7a1,1,0,0,0,0,2h7.59l-3.3,3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5a1,1,0,0,0,.21-.33A1,1,0,0,0,17.92,11.62Z"></path>
+                    </svg>
+                </span>
+                <div class="portfolio_item-details">
+                    <h3 class= "details_title">Analyzing Patterns in Emergency Care Access and Utilization</h3>
+                    <p class="details_description">
+                       This project analyzed 2021 U.S. hospital emergency department (ED) visit data to understand patterns in after-hours utilization. 
+                       The findings showed that nearly half of ED visits occur between 5 p.m. and 8 a.m., when other care options are limited. 
+                       The analysis highlighted higher after-hours usage among pediatric patients, rural populations, and those experiencing trauma, overdose, 
+                       or poisoning. Insights from this study supported policy discussions on the importance of maintaining 24/7 hospital access, 
+                       especially as other healthcare sites close during off-hours.
+                    </p>
+                    <ul class= "details_info">
+                        <li>Completed - <span>July 2024</span></li>
+                        <li>Technologies - <span>STATA, Microsoft Excel</span></li>
+                        <li>Role - <span>Health Data Analyst (KNG Health Consulting for the Coalition to Strengthen America's Healthcare)</span></li>
+                        <li>View - <span><a href= "https://strengthenhealthcare.org/new-analysis-nearly-half-of-emergency-department-visits-occur-after-hours-when-24-7-access-to-care-is-critical-for-saving-lives/">Click here to view blog and full report on the Coalitions's website</a></span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="work_card mix data_science">
+                <img src="./Images/KNG_SNP.jpg" alt="" class="work_img">
+                <h3 class="work_title">
+                    Growth in Special Needs Plans Outpaces that of Medicare Advantage, Particularly in the South
+                </h3>
+                <span class="work_button">Learn more
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="right-arrow" class="work_button-icon" width="25" height="25" fill="hsl(139, 93%, 24%)">
+                        <path d="M17.92,11.62a1,1,0,0,0-.21-.33l-5-5a1,1,0,0,0-1.42,1.42L14.59,11H7a1,1,0,0,0,0,2h7.59l-3.3,3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5a1,1,0,0,0,.21-.33A1,1,0,0,0,17.92,11.62Z"></path>
+                    </svg>
+                </span>
+                <div class="portfolio_item-details">
+                    <h3 class= "details_title">Analyzing Trends in Medicare Advantage Special Needs Plans (SNPs)</h3>
+                    <p class="details_description">
+                        This project examines the rapid growth of Medicare Advantage Special Needs Plans (SNPs) between 2021 and 2023, 
+                        with a focus on geographic variation and enrollment patterns. Using CMS enrollment data, 
+                        I analyzed relationships between SNP penetration, Medicare Advantage (MA) enrollment, 
+                        and regional trends—finding particularly strong growth in Southern states. The analysis included correlation calculations, 
+                        percentage change tracking, and data visualization to highlight key patterns and disparities in access to coordinated care for 
+                        high-need populations.
+                    </p>
+                    <ul class= "details_info">
+                        <li>Published - <span>May 2024</span></li>
+                        <li>Technologies - <span>STATA, Microsoft Excel</span></li>
+                        <li>Role - <span>Health Data Analyst</span></li>
+                        <li>View - <span><a href= "https://www.knghealth.com/growth-in-special-needs-plans-outpaces-that-of-medicare-advantage-particularly-in-the-south/">Click here to view blog on KNG's website</a></span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="work_card mix archived_projects">
+                <img src="./Images/DRC_Resource_Wealth.webp" alt="" class="work_img">
+                <h3 class="work_title">
+                    The Resource Curse: Economic Complexity in the Democratic Republic of Congo
+                </h3>
+                <span class="work_button">Learn more
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="right-arrow" class="work_button-icon" width="25" height="25" fill="hsl(139, 93%, 24%)">
+                        <path d="M17.92,11.62a1,1,0,0,0-.21-.33l-5-5a1,1,0,0,0-1.42,1.42L14.59,11H7a1,1,0,0,0,0,2h7.59l-3.3,3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5a1,1,0,0,0,.21-.33A1,1,0,0,0,17.92,11.62Z"></path>
+                    </svg>
+                </span>
+                <div class="portfolio_item-details">
+                    <h3 class= "details_title">Analyzing the Impact of Natural Resource Dependence on Economic Development</h3>
+                    <p class="details_description">
+                       This early academic project explored the relationship between the Democratic Republic of Congo’s abundant natural resources 
+                       and its economic performance through the lens of the Economic Complexity Index. Using trade and economic data, the analysis examined 
+                       how reliance on raw resource exports can hinder diversification and long-term growth. The project provided foundational experience 
+                       in economic research, data interpretation, and presenting policy-relevant findings.
+                    </p>
+                    <ul class= "details_info">
+                        <li>Completed - <span>May 2024</span></li>
+                        <li>Technologies - <span>STATA, Microsoft Excel</span></li>
+                        <li>Role - <span>Author & Data Scientist (Academic Project - American University)</span></li>
+                        <li>View - <span><a href="#contact">This project has been archived. It will be revisited at a later date but click here to contact me if you want to know more about this project.</a></span></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--========== Portfolio Popup =========-->
+    <div class="portfolio_popup">
+        <div class="portfolio_popup-inner">
+            <div class="portfolio_popup-content grid">
+                <span class="portfolio_popup-close">
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="exit" height="25" width="25" fill="gray">
+                        <path d="M12 1a11 11 0 1 0 11 11A11.013 11.013 0 0 0 12 1Zm4.949 14.536a1 1 0 1 1-1.414 1.414L12 13.414 8.464 16.95a1 1 0 0 1-1.414-1.414L10.586 12 7.05 8.464A1 1 0 1 1 8.464 7.05L12 10.586l3.535-3.536a1 1 0 1 1 1.414 1.414L13.414 12Z"></path>
+                    </svg>
+                </span>
+                <div class="pp_thumbnail">
+                     <img src="./Images/work_RIPIL_network.png" alt="" class="portfolio_popup-img"> <!-- Update Image here -->
+                </div>
+                <div class="portfolio_popup-info">
+                    <div class="portfolio_popup-subtitle">Featured - <span>Design</span></div>
+                    <div class="portfolio_popup-body">
+                        <h3 class= "details_title">App for technology & services</h3>
+                    <p class="details_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                        I WILL COME BACK TO THIS LATER.
+                    </p>
+                    <ul class= "details_info">
+                        <li>Created - <span>4 dec 2020</span></li>
+                        <li>Technologies - <span>HTML CSS</span></li>
+                        <li>Role - <span>frontend</span></li>
+                        <li>View - <span><a href= "#">www.domain.com</a></span></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--========== Contact ===========-->
+    <section class="contact section" id = "contact">
+        <h2 data-heading="Get in touch" class = "section_title"> Contact Me</h2>
+
+        <div class="contact_container container grid">
+            <div class=" contact_content">
+                <div class = "contact_info">
+                    <div class="contact_card">
+                        <svg width="25px" height="25px" class="contact_card-icon" viewBox="0 0 512 512" enable-background="new 0 0 512 512" id="Letter" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g>
+                            <path d="M371.518,232.8H38.647v50.149h10v-35.408L188.73,348.063c4.892,3.51,10.622,5.265,16.354,5.265     c5.73,0,11.463-1.755,16.354-5.265l57.081-40.961l-5.83-8.125l-57.081,40.962c-6.296,4.517-14.754,4.517-21.048-0.001     L59.191,242.8h291.782l-47.104,33.802l5.83,8.125l51.818-37.185v175.462l-108.436-84.558l-6.148,7.886l105.051,81.918H58.187     l105.044-81.918l-6.15-7.886L48.647,423.007V302.238h-10V438.25h332.87V232.8z"/>
+                            <rect height="9.999" transform="matrix(0.8124 -0.5831 0.5831 0.8124 -115.389 224.6395)"/>
+                        </g>            
+                        <g>
+                            <path d="M205.443,118.265h-17.819v-16.7c0-9.826,7.994-17.819,17.819-17.819s17.819,7.993,17.819,17.819v113.181h10V101.564     c0-6.775-2.437-12.989-6.477-17.819h213.747c12.583,0,22.819,11.597,22.819,25.851v318.66h-73.684v9.999h83.684V109.596     c0-19.769-14.723-35.851-32.819-35.851h-235.09c-15.34,0-27.819,12.479-27.819,27.819v26.7h27.819V118.265z"/>
+                        </g>
+                    </svg>
+                    <h3 class="contact_card-title">Email</h3>
+                    <span class="contact_card-data">Info@DGT-International.com</span>
+                    <span class="contact_button">
+                        Write me
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="right-arrow" class="contact_button-icon" width="25" height="25" fill="hsl(139, 93%, 24%)">
+                            <path d="M17.92,11.62a1,1,0,0,0-.21-.33l-5-5a1,1,0,0,0-1.42,1.42L14.59,11H7a1,1,0,0,0,0,2h7.59l-3.3,3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5a1,1,0,0,0,.21-.33A1,1,0,0,0,17.92,11.62Z"></path>
+                        </svg> 
+                    </span>
+                    </div>
+                </div>
+                
+
+            </div>
+
+            <div class="contact_content">
+                <form action="" class="contact_form">
+                    <div class="input_container">
+                        <input type="text" class="input">
+                        <label for="">Username</label>
+                        <span>Username</span>
+                    </div>
+
+                    <div class="input_container">
+                        <input type="email" class="input">
+                        <label for="">Email</label>
+                        <span>Email</span>
+                    </div>
+
+                    <div class="input_container">
+                        <input type="tel" class="input">
+                        <label for="">Phone</label>
+                        <span>Phone</span>
+                    </div>
+
+                    <div class="input_container textarea">
+                        <textarea name="" id="" class="input"></textarea>
+                        <label for="">Message</label>
+                        <span>Messsage</span>
+                    </div>
+                    <button type="submit" class="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" viewBox="0 0 422.738 422.737" class="button_icon">
+                        <path d="M211.369,0C94.819,0,0,94.819,0,211.368c0,116.55,94.819,211.369,211.369,211.369
+		                    c116.549,0,211.37-94.819,211.37-211.369C422.738,94.819,327.918,0,211.369,0z M211.369,403.355
+	                    	c-105.862,0-191.986-86.125-191.986-191.987c0-105.861,86.125-191.986,191.986-191.986s191.987,86.125,191.987,191.986
+		                    C403.355,317.23,317.23,403.355,211.369,403.355z">
+                        </path>
+                        <path d="M221.453,356.859l-37.241-122.766l-122.783-27.64l255.436-103.826L221.453,356.859z
+		                    M107.916,202.616l87.287,19.652l27.649,91.157l69.762-185.878L107.916,202.616z">
+                        </path>
+                    </svg>
+                     Send Message
+                </button>
+                </form>
+            </div>
+        </div>    
+    </section>
+
+    <!--========== FOOTER =========-->
+    <footer class="footer">
+        <div class="footer_bg">
+            <div class="footer_container container grid">
+                <div>
+                    <h1 class="footer_title">Daniel</h1>
+                    <span class="footer_subtitle"></span>
+                </div>
+
+                <ul class="footer_links">
+                    <li>
+                        <a href="#about" class="footer_link">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#skills" class="footer_link">Tech Stacks</a>
+                    </li>
+
+                     <li>
+                        <a href="#work" class="footer_link">Portfolio</a>
+                    </li>
+
+                     <li>
+                        <a href="#contact" class="footer_link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="footer_socials">
+                    <a href="https://www.linkedin.com/in/daniel-tshiani/" target="_blank" class="footer_social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="1.786 1.783 287.865 76.248" id="linkedin">
+                            <path d="M213.882 7.245c0-3.015 2.508-5.462 5.6-5.462h64.568c3.093 0 5.6 2.447 5.6 5.462V72.57c0 3.016-2.507 5.461-5.6 5.461h-64.568c-3.092 0-5.6-2.445-5.6-5.46V7.244z"></path>
+                            <path d="M1.785 65.652h31.62V55.27H13.23V15.665H1.785v49.987zM49.414 65.652v-34.43H37.97v34.43h11.444zm-5.721-39.13c3.99 0 6.474-2.644 6.474-5.95-.074-3.378-2.484-5.947-6.398-5.947-3.915 0-6.475 2.57-6.475 5.947 0 3.306 2.484 5.95 6.324 5.95h.075zM54.727 65.652h11.444V46.424c0-1.029.074-2.058.377-2.791.826-2.056 2.709-4.186 5.871-4.186 4.142 0 5.799 3.158 5.799 7.784v18.42H89.66V45.91c0-10.576-5.646-15.497-13.176-15.497-6.173 0-8.884 3.451-10.39 5.802h.077v-4.993H54.727c.151 3.231 0 34.43 0 34.43zM105.805 15.665H94.361v49.987h11.444V54.489l2.86-3.601 8.96 14.764h14.078l-15.056-21.373 13.174-14.54h-13.776s-9.411 13.008-10.24 14.552V15.665z"></path>
+                            <path d="M162.306 51.29c.151-.884.377-2.58.377-4.498 0-8.9-4.518-17.936-16.413-17.936-12.724 0-18.597 10.063-18.597 19.19 0 11.288 7.153 18.337 19.65 18.337 4.97 0 9.561-.732 13.327-2.275l-1.506-7.558c-3.088 1.024-6.25 1.537-10.164 1.537-5.345 0-10.012-2.195-10.389-6.871l23.715.072v.002zm-23.79-7.742c.301-2.938 2.26-7.273 7.153-7.273 5.194 0 6.4 4.628 6.4 7.273h-13.552zM190.93 15.665v17.304h-.151c-1.657-2.422-5.12-4.038-9.71-4.038-8.81 0-16.564 7.05-16.49 19.094 0 11.164 7.003 18.435 15.735 18.435 4.744 0 9.26-2.058 11.52-6.024h.225l.453 5.216h10.163c-.15-2.424-.302-6.61-.302-10.723V15.664h-11.444zm0 34.05c0 .88-.075 1.763-.227 2.495-.675 3.16-3.386 5.361-6.699 5.361-4.742 0-7.83-3.818-7.83-9.84 0-5.654 2.637-10.208 7.906-10.208 3.538 0 6.022 2.423 6.7 5.433.15.663.15 1.398.15 2.058v4.7z"></path>
+                            <path fill="#fff" d="M236.85 65.61V31.18h-11.444v34.43h11.445zm-5.72-39.13c3.99 0 6.474-2.644 6.474-5.948-.075-3.379-2.484-5.949-6.398-5.949-3.917 0-6.475 2.57-6.475 5.949 0 3.304 2.483 5.948 6.324 5.948h.074zM243.184 65.61h11.443V46.385c0-1.028.075-2.058.377-2.792.827-2.057 2.71-4.186 5.872-4.186 4.14 0 5.797 3.157 5.797 7.786V65.61h11.443V45.869c0-10.575-5.645-15.496-13.174-15.496-6.173 0-8.884 3.45-10.39 5.8h.076v-4.992h-11.443c.149 3.23-.001 34.43-.001 34.43z"></path>
+                        </svg>
+                    </a>
+
+                    <a href="https://github.com/DGT-INT" target="_blank" class="footer_social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" id="github">
+                            <path d="M64 1.512c-23.493 0-42.545 19.047-42.545 42.545 0 18.797 12.19 34.745 29.095 40.37 2.126.394 2.907-.923 2.907-2.047 0-1.014-.04-4.366-.058-7.92-11.837 2.573-14.334-5.02-14.334-5.02-1.935-4.918-4.724-6.226-4.724-6.226-3.86-2.64.29-2.586.29-2.586 4.273.3 6.523 4.385 6.523 4.385 3.794 6.504 9.953 4.623 12.38 3.536.383-2.75 1.485-4.628 2.702-5.69-9.45-1.075-19.384-4.724-19.384-21.026 0-4.645 1.662-8.44 4.384-11.42-.442-1.072-1.898-5.4.412-11.26 0 0 3.572-1.142 11.7 4.363 3.395-.943 7.035-1.416 10.65-1.432 3.616.017 7.258.49 10.658 1.432 8.12-5.504 11.688-4.362 11.688-4.362 2.316 5.86.86 10.187.418 11.26 2.728 2.978 4.378 6.774 4.378 11.42 0 16.34-9.953 19.938-19.427 20.99 1.526 1.32 2.886 3.91 2.886 7.88 0 5.692-.048 10.273-.048 11.674 0 1.13.766 2.458 2.922 2.04 16.896-5.632 29.07-21.574 29.07-40.365C106.545 20.56 87.497 1.512 64 1.512z"></path>
+                            <path d="M37.57 62.596c-.095.212-.428.275-.73.13-.31-.14-.482-.427-.382-.64.09-.216.424-.277.733-.132.31.14.486.43.38.642zm-.524-.388M39.293 64.52c-.203.187-.6.1-.87-.198-.278-.297-.33-.694-.124-.884.208-.188.593-.1.87.197.28.3.335.693.123.884zm-.406-.437M40.97 66.968c-.26.182-.687.012-.95-.367-.262-.377-.262-.83.005-1.013.264-.182.684-.018.95.357.262.385.262.84-.005 1.024zm0 0M43.268 69.336c-.233.257-.73.188-1.093-.163-.372-.343-.475-.83-.242-1.087.237-.257.736-.185 1.102.163.37.342.482.83.233 1.086zm0 0M46.44 70.71c-.104.334-.582.485-1.064.344-.482-.146-.796-.536-.7-.872.1-.336.582-.493 1.067-.342.48.144.795.53.696.87zm0 0M49.92 70.965c.013.35-.396.642-.902.648-.508.012-.92-.272-.926-.618 0-.354.4-.642.908-.65.506-.01.92.272.92.62zm0 0M53.16 70.414c.06.342-.29.694-.793.787-.494.092-.95-.12-1.014-.46-.06-.35.297-.7.79-.792.503-.088.953.118 1.017.466zm0 0"></path>
+                            <path d="M24.855 108.302h-10.7a.5.5 0 0 0-.5.5v5.232a.5.5 0 0 0 .5.5h4.173v6.5s-.937.32-3.53.32c-3.056 0-7.327-1.116-7.327-10.508 0-9.393 4.448-10.63 8.624-10.63 3.614 0 5.17.636 6.162.943.31.094.6-.216.6-.492l1.193-5.055a.468.468 0 0 0-.192-.39c-.403-.288-2.857-1.66-9.058-1.66-7.144 0-14.472 3.038-14.472 17.65 0 14.61 8.39 16.787 15.46 16.787 5.854 0 9.405-2.502 9.405-2.502.146-.08.162-.285.162-.38v-16.316a.5.5 0 0 0-.5-.5zM79.506 94.81H73.48a.5.5 0 0 0-.498.503l.002 11.644h-9.392V95.313a.5.5 0 0 0-.497-.503H57.07a.5.5 0 0 0-.498.503v31.53c0 .277.224.503.498.503h6.025a.5.5 0 0 0 .497-.504v-13.486h9.392l-.016 13.486c0 .278.224.504.5.504h6.038a.5.5 0 0 0 .497-.504v-31.53c0-.278-.22-.502-.497-.502zM32.34 95.527c-2.144 0-3.884 1.753-3.884 3.923 0 2.167 1.74 3.925 3.884 3.925 2.146 0 3.885-1.758 3.885-3.925 0-2.17-1.74-3.923-3.885-3.923zM35.296 105.135H29.29c-.276 0-.522.284-.522.56v20.852c0 .613.382.795.876.795h5.41c.595 0 .74-.292.74-.805v-6.346-14.553a.5.5 0 0 0-.498-.502zM102.902 105.182h-5.98a.5.5 0 0 0-.496.504v15.46s-1.52 1.11-3.675 1.11-2.727-.977-2.727-3.088v-13.482a.5.5 0 0 0-.497-.504h-6.068a.502.502 0 0 0-.498.504v14.502c0 6.27 3.495 7.804 8.302 7.804 3.944 0 7.124-2.18 7.124-2.18s.15 1.15.22 1.285c.07.136.247.273.44.273l3.86-.017a.502.502 0 0 0 .5-.504l-.003-21.166a.504.504 0 0 0-.5-.502zM119.244 104.474c-3.396 0-5.706 1.515-5.706 1.515V95.312a.5.5 0 0 0-.497-.503H107a.5.5 0 0 0-.5.503v31.53a.5.5 0 0 0 .5.503h4.192c.19 0 .332-.097.437-.268.103-.17.254-1.454.254-1.454s2.47 2.34 7.148 2.34c5.49 0 8.64-2.784 8.64-12.502s-5.03-10.988-8.428-10.988zm-2.36 17.764c-2.073-.063-3.48-1.004-3.48-1.004v-9.985s1.388-.85 3.09-1.004c2.153-.193 4.228.458 4.228 5.594 0 5.417-.935 6.486-3.837 6.398zM53.195 122.12c-.263 0-.937.107-1.63.107-2.22 0-2.973-1.032-2.973-2.368v-8.866h4.52a.5.5 0 0 0 .5-.504v-4.856a.5.5 0 0 0-.5-.502h-4.52l-.007-5.97c0-.227-.116-.34-.378-.34h-6.16c-.238 0-.367.106-.367.335v6.17s-3.087.745-3.295.805a.5.5 0 0 0-.36.48v3.877a.5.5 0 0 0 .497.503h3.158v9.328c0 6.93 4.86 7.61 8.14 7.61 1.497 0 3.29-.48 3.586-.59.18-.067.283-.252.283-.453l.004-4.265a.51.51 0 0 0-.5-.502z"></path>
+                        </svg>
+                    </a>
+
+                    <a href="Resume.pdf" target="_blank" class="footer_social-link"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 64 64" viewBox="0 0 64 64" id="cv">
+                            <path d="M54.14,0H9.86C8.21,0,6.86,1.35,6.86,3v58c0,1.65,1.35,2.99,2.99,2.99h19c0,0,0,0,0.01,0c0,0,0,0,0.01,0h25.27c1.65,0,2.99-1.34,2.99-2.99V3C57.14,1.35,55.8,0,54.14,0z M7.85,61.01V3c0-1.11,0.91-2.02,2.01-2.02h18.51v62.03H9.86C8.75,63.01,7.85,62.11,7.85,61.01z M56.15,61.01c0,1.1-0.91,2.01-2.01,2.01H29.36V0.98h24.79c1.1,0,2.01,0.91,2.01,2.02V61.01z"></path>
+                            <path d="M25.73 5.92H10.71c-.27 0-.49.22-.49.49v15.33c0 .28.23.49.49.49h15.02c.27 0 .49-.22.49-.49V6.41C26.22 6.13 25.99 5.92 25.73 5.92zM15.78 14.46v-.03c.02-.42.16-.8.38-1.05.08-.09.16-.16.25-.23.25-.18.57-.28.93-.28h.09c.7.03 1.24-.07 1.56-.27.32-.14.79-.26 1.1-.05.3.19.47.67.5 1.34v2.02c0 1.33-1.09 2.42-2.43 2.42-.31 0-.59-.06-.86-.16-.03-.01-.06-.02-.09-.03-.01-.01-.03-.02-.04-.02-.85-.38-1.44-1.23-1.44-2.21L15.78 14.46zM18.88 19.63c0 .36-.3.65-.66.65-.35 0-.65-.29-.65-.65v-.36c.2.04.39.06.59.06.25 0 .48-.03.72-.08V19.63zM25.24 21.25h-1.04c-.45-1.26-1.65-2.11-3.01-2.11h-1.32v-.28c1.02-.58 1.71-1.68 1.71-2.94v-1.93c.45-1.08.56-2.61-.11-3.39-.32-.36-.75-.52-1.25-.45-1.23-.9-2.64-1.21-3.89-.86-1.15.32-2.05 1.21-2.52 2.48-.05.13-.04.27.02.39.06.12.17.21.3.25.11.04.2.09.29.17.13.12.21.32.24.54l.16 1.36v.02l-.05 1.42c0 1.31.75 2.45 1.83 3.01v.21h-1.32c-1.35 0-2.56.87-3.01 2.11h-1.04V6.9h14.03V21.25zM15.03 28.77c.62 0 1.22.23 1.69.65.2.18.51.16.7-.04.18-.2.16-.51-.04-.7-.65-.58-1.48-.9-2.35-.9-1.94 0-3.52 1.58-3.52 3.52s1.58 3.52 3.52 3.52c.86 0 1.7-.32 2.35-.9.2-.18.22-.49.04-.7-.18-.2-.49-.22-.7-.04-.47.42-1.07.65-1.69.65-1.4 0-2.53-1.14-2.53-2.54S13.63 28.77 15.03 28.77zM22.18 34.82C22.18 34.82 22.18 34.82 22.18 34.82c.21 0 .39-.13.46-.32l2.26-6.05c.09-.25-.03-.54-.29-.63-.25-.09-.54.03-.63.29l-1.8 4.82-1.82-4.83c-.1-.25-.38-.38-.63-.29-.25.1-.38.38-.29.63l2.29 6.05C21.79 34.7 21.98 34.82 22.18 34.82zM23.97 39.49H12.48c-.78 0-1.41.63-1.41 1.41v3.15c0 .78.63 1.41 1.41 1.41h11.49c.78 0 1.42-.63 1.42-1.41V40.9C25.38 40.12 24.74 39.49 23.97 39.49zM23.97 49.65H12.48c-.78 0-1.41.64-1.41 1.42v3.14c0 .78.63 1.42 1.41 1.42h11.49c.78 0 1.42-.64 1.42-1.42v-3.14C25.38 50.29 24.74 49.65 23.97 49.65zM51.75 6.67H32.92c-.27 0-.49.22-.49.49 0 .27.22.49.49.49h18.83c.27 0 .49-.22.49-.49C52.25 6.89 52.03 6.67 51.75 6.67zM51.75 13.77H32.92c-.27 0-.49.22-.49.49 0 .27.22.49.49.49h18.83c.27 0 .49-.22.49-.49C52.25 13.99 52.03 13.77 51.75 13.77zM51.75 20.86H32.92c-.27 0-.49.22-.49.49 0 .27.22.49.49.49h18.83c.27 0 .49-.22.49-.49C52.25 21.08 52.03 20.86 51.75 20.86zM51.75 27.96H32.92c-.27 0-.49.22-.49.49 0 .27.22.49.49.49h18.83c.27 0 .49-.22.49-.49C52.25 28.18 52.03 27.96 51.75 27.96zM51.75 35.06H32.92c-.27 0-.49.22-.49.49 0 .27.22.49.49.49h18.83c.27 0 .49-.22.49-.49C52.25 35.28 52.03 35.06 51.75 35.06zM51.75 42.15H32.92c-.27 0-.49.22-.49.49s.22.49.49.49h18.83c.27 0 .49-.22.49-.49S52.03 42.15 51.75 42.15zM51.75 49.25H32.92c-.27 0-.49.22-.49.49 0 .27.22.49.49.49h18.83c.27 0 .49-.22.49-.49C52.25 49.47 52.03 49.25 51.75 49.25zM51.75 56.35H32.92c-.27 0-.49.22-.49.49 0 .27.22.49.49.49h18.83c.27 0 .49-.22.49-.49C52.25 56.57 52.03 56.35 51.75 56.35z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <p class="footer_copy">&#169; DGT-International. All right reserved</p>
+        </div>
+    </footer>
+
+
+    </main>
+    <!--========== SCROOL UP =========-->
+
+
+    <!--========== MIXITUP FILTER =========-->
+    <script src="/mixitup.min.js"></script>
+
+
+    <!--========== SWIPER JS =========-->
+
+
+    <!--========== MAIN JS =========-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./JavaScript.js"></script>
+
+
+
+
+     
+</body>
+</html>

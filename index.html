@@ -7,29 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--========== Unicorns ==========-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
     <!--========== SWIPER ==========-->
     <link rel="stylesheet" href="">
-
     <!--========== MAIN CSS ==========-->
-    <link rel="stylesheet" href="./CSS.css">
-
-    
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 
 <body>
     <div id="page">
      </div>
-     
-
     <!--========== SIDEBAR =========-->
     <div class="nav_toggle" id="nav-toggle">
-        <i class="uil uil-bars">
-            <svg xmlns="http://www.w3.org/2000/svg" id="bars">
-                <path d="M1664 1344v128q0 26-19 45t-45 19H192q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19H192q-26 0-45-19t-19-45V832q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19H192q-26 0-45-19t-19-45V320q0-26 19-45t45-19h1408q26 0 45 19t19 45z"></path>
-            </svg>
-        </i>
+      <i class="fas fa-bars"></i>
     </div>
+
      <aside class = "sidebar" id="sidebar">
         <nav class="nav">
             <div class="nav_logo">
@@ -58,7 +50,7 @@
                 </div>
             </div>
             <div class="btn_share">
-                <img src="./images/Logo background Removed.png" alt="Share Logo" class="uis uis-share-alt social_share" />
+                <img src="./Images/LogobackgroundRemoved.png" alt="Share Logo" class="uis uis-share-alt social_share" />
             </div>
 
             <div class="nav_close" id="nav-close">
@@ -193,6 +185,28 @@
                         <span class="about_subtitle">Currently accepting new work</span>
                     </div>
                 </div>
+
+                <h3 class="about_heading">Experience</h3>
+
+                <div class="experience_section">
+                  <div class="experience_box">
+                    <div class="experience_item">
+                      <h4>American University</h4>
+                      <p>Master of Science in Data Science</p>
+                    </div>
+
+                    <div class="experience_item">
+                      <h4>Loyola University</h4>
+                      <p>Bachelor of Science in Economics and Mathematics</p>
+                    </div>
+
+                    <div class="experience_item">
+                      <h4>Montgomery College</h4>
+                      <p>Associate of Science in Mathematics</p>
+                    </div>
+                  </div>
+                </div>
+
                 <a href="#work" class="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" viewBox="0 0 422.738 422.737" class="button_icon">
                         <path d="M211.369,0C94.819,0,0,94.819,0,211.368c0,116.55,94.819,211.369,211.369,211.369
@@ -668,45 +682,87 @@
             </div>
 
             <div class="contact_content">
-                <form action="" class="contact_form">
+                  <form id="contactForm" class="contact_form">
+                    <input type="hidden" name="access_key" value="9de297fe-d835-42d2-91c6-bba64a94fcba">
+
                     <div class="input_container">
-                        <input type="text" class="input">
-                        <label for="">Username</label>
-                        <span>Username</span>
+                      <input type="text" name="username" class="input" required>
+                      <label for="">Username</label>
+                      <span>Username</span>
                     </div>
 
                     <div class="input_container">
-                        <input type="email" class="input">
-                        <label for="">Email</label>
-                        <span>Email</span>
+                      <input type="email" name="email" class="input" required>
+                      <label for="">Email</label>
+                      <span>Email</span>
                     </div>
 
                     <div class="input_container">
-                        <input type="tel" class="input">
-                        <label for="">Phone</label>
-                        <span>Phone</span>
+                      <input type="tel" name="phone" class="input">
+                      <label for="">Phone</label>
+                      <span>Phone</span>
                     </div>
 
                     <div class="input_container textarea">
-                        <textarea name="" id="" class="input"></textarea>
-                        <label for="">Message</label>
-                        <span>Messsage</span>
+                      <textarea name="message" class="input" required></textarea>
+                      <label for="">Message</label>
+                      <span>Message</span>
                     </div>
-                    <button type="submit" class="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" viewBox="0 0 422.738 422.737" class="button_icon">
-                        <path d="M211.369,0C94.819,0,0,94.819,0,211.368c0,116.55,94.819,211.369,211.369,211.369
-		                    c116.549,0,211.37-94.819,211.37-211.369C422.738,94.819,327.918,0,211.369,0z M211.369,403.355
-	                    	c-105.862,0-191.986-86.125-191.986-191.987c0-105.861,86.125-191.986,191.986-191.986s191.987,86.125,191.987,191.986
-		                    C403.355,317.23,317.23,403.355,211.369,403.355z">
+
+                    <button type="submit" class="contact_button_form">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+                        viewBox="0 0 422.738 422.737" class="button_icon">
+                        <path
+                          d="M211.369,0C94.819,0,0,94.819,0,211.368c0,116.55,94.819,211.369,211.369,211.369
+                          c116.549,0,211.37-94.819,211.37-211.369C422.738,94.819,327.918,0,211.369,0z M211.369,403.355
+                          c-105.862,0-191.986-86.125-191.986-191.987c0-105.861,86.125-191.986,191.986-191.986s191.987,86.125,191.987,191.986
+                          C403.355,317.23,317.23,403.355,211.369,403.355z">
                         </path>
-                        <path d="M221.453,356.859l-37.241-122.766l-122.783-27.64l255.436-103.826L221.453,356.859z
-		                    M107.916,202.616l87.287,19.652l27.649,91.157l69.762-185.878L107.916,202.616z">
+                        <path
+                          d="M221.453,356.859l-37.241-122.766l-122.783-27.64l255.436-103.826L221.453,356.859z
+                          M107.916,202.616l87.287,19.652l27.649,91.157l69.762-185.878L107.916,202.616z">
                         </path>
-                    </svg>
-                     Send Message
-                </button>
-                </form>
-            </div>
+                      </svg>
+                      Send Message
+                    </button>
+
+                    <p id="formStatus" style="margin-top:1rem; font-weight:500;"></p>
+                  </form>
+                </div>
+
+                <script>
+                  const form = document.getElementById('contactForm');
+                  const status = document.getElementById('formStatus');
+
+                  form.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    status.textContent = "Sending...";
+                    const formData = new FormData(form);
+
+                    try {
+                      const response = await fetch("https://api.web3forms.com/submit", {
+                        method: "POST",
+                        body: formData
+                      });
+
+                      const result = await response.json();
+
+                      if (result.success) {
+                        status.style.color = "lightgreen";
+                        status.textContent = "Message sent successfully!";
+                        form.reset();
+                      } else {
+                        throw new Error(result.message);
+                      }
+
+                    } catch (error) {
+                      status.style.color = "tomato";
+                      status.textContent = "Oops! Something went wrong. Please try again.";
+                    }
+                  });
+                </script>
+
+
         </div>    
     </section>
 
@@ -768,25 +824,17 @@
         </div>
     </footer>
 
-
     </main>
     <!--========== SCROOL UP =========-->
 
-
     <!--========== MIXITUP FILTER =========-->
-    <script src="/mixitup.min.js"></script>
-
+    <script src="mixitup.min.js"></script>
 
     <!--========== SWIPER JS =========-->
-
 
     <!--========== MAIN JS =========-->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./JavaScript.js"></script>
-
-
-
-
      
 </body>
 </html>

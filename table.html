@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Order History Table</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<style>
+  :root { --line:#e5e7eb; }
+  body{font:14px/1.45 system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;padding:24px}
+  h1{margin:0 0 12px}
+  .wrap{border:1px solid var(--line);border-radius:10px;overflow:auto;max-height:78vh}
+  table{border-collapse:separate;border-spacing:0;width:100%;min-width:1320px}
+  thead th{position:sticky;top:0;background:#f9fafb;border-bottom:1px solid var(--line);padding:10px;white-space:nowrap}
+  tbody td{border-bottom:1px solid var(--line);padding:10px;vertical-align:top}
+  tbody tr:nth-child(even){background:#fafafa}
+  td[contenteditable="true"]{outline:0}
+  .muted{opacity:.55}
+  button{margin:12px 0 0;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;cursor:pointer}
+</style>
+</head>
+<body>
+<h1>Order Summary (transcribed)</h1>
+
+<div class="wrap">
+<table id="orders">
+  <thead>
+    <tr>
+      <th>SKU</th>
+      <th>QTY</th>
+      <th>Unit</th>
+      <th>Description</th>
+      <th>Last Order Price</th>
+      <th>Recent Order</th>
+      <th>Total # of Orders</th>
+      <th>Total QTY</th>
+      <th>Total Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td contenteditable>FG100M</td><td contenteditable></td><td contenteditable>1000/CS</td><td contenteditable>FG TOUCH NITRILE EXAM GLOVES, 100CT, MD</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>$197.42</td></tr>
+    <tr><td contenteditable>JMM2360Z</td><td contenteditable></td><td contenteditable>100/PK</td><td contenteditable>MBO–ELECTRODE, RED DOT, RESTING EKG</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>4 PAK</td><td contenteditable></td></tr>
+    <tr><td contenteditable>MPH03052SA</td><td contenteditable></td><td contenteditable>25/BX</td><td contenteditable>TEST, STREP A, DIPSTICK, 25 TEST</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>39 BX</td><td contenteditable>$1,256.64</td></tr>
+    <tr><td contenteditable>NDA141020</td><td contenteditable></td><td contenteditable>20/CS</td><td contenteditable>CONTAINER, SHARPS, 10QT</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>2 CS</td><td contenteditable>$244.48</td></tr>
+    <tr><td contenteditable>NON332**</td><td contenteditable></td><td contenteditable>12/CS</td><td contenteditable>PAPER, EXAM TBL, STND, SMTH, 18INX225FT</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>7 CS</td><td contenteditable>$949.08</td></tr>
+    <tr><td contenteditable>PRM25500H</td><td contenteditable></td><td contenteditable>100/BX</td><td contenteditable>BANDAGE, ADHESIVE, PLASTIC, 3/4"×3", ST, LF</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>18 BX</td><td contenteditable>$28.62</td></tr>
+    <tr><td contenteditable>QDL20387</td><td contenteditable></td><td contenteditable>25/PK</td><td contenteditable>NO RETURN, TEST, QUICKVUE, SARS-COV-2</td><td contenteditable></td><td contenteditable></td><td contenteditable>11</td><td contenteditable>41 PAK</td><td contenteditable>$5,330.00</td></tr>
+    <tr><td contenteditable>03-0167-25</td><td contenteditable></td><td contenteditable>25/BX</td><td contenteditable>DEXAMETHASONE 10MG/ML V</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>3 BX</td><td contenteditable>$187.24</td></tr>
+    <tr><td contenteditable>55150-162-05</td><td contenteditable></td><td contenteditable>20/BX</td><td contenteditable>LIDOCAINE HCL 1% PF 50V 10XML</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>3 BX</td><td contenteditable>$40.62</td></tr>
+    <tr><td contenteditable>63323-162-02</td><td contenteditable></td><td contenteditable>25/BX</td><td contenteditable>KETOROLAC TROMETH 30MG/ML SDV 25XML</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>8 BX</td><td contenteditable>$259.23</td></tr>
+    <tr><td contenteditable>M-06595SZ</td><td contenteditable></td><td contenteditable>200/BOX</td><td contenteditable>SYRINGE, TB, 1S, 1ML</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>6 BX</td><td contenteditable>$74.73</td></tr>
+    <tr><td contenteditable>MDS098001H</td><td contenteditable></td><td contenteditable>1 EA</td><td contenteditable>HYDROGEN PEROXIDE, BOTTLE, 16-OZ</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>9 EA</td><td contenteditable>$5.04</td></tr>
+    <tr><td contenteditable>OTC142115TV</td><td contenteditable></td><td contenteditable>20/PK</td><td contenteditable>ELEPHANT + RHINO EAR WASH TIPS 20/PK</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>4 PAK</td><td contenteditable></td></tr>
+    <tr><td contenteditable>PBOBSP510</td><td contenteditable></td><td contenteditable>EA</td><td contenteditable>TEST, BIOSIGN, FLU A+B, CASSETTE, WAIVED</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>48 BX</td><td contenteditable>$10,176.00</td></tr>
+    <tr><td contenteditable>ETHDNX12H</td><td contenteditable></td><td contenteditable>1 EA</td><td contenteditable>ADHESIVE, SKIN, DERMABOND, ADVANCED, 0.7</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>10 EA</td><td contenteditable>$537.00</td></tr>
+    <tr><td contenteditable>KDL1050H</td><td contenteditable></td><td contenteditable>12/EA</td><td contenteditable>WOUND-DRESSING, PAD, TELFA, NON-ADHRNT, 3×4</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>20 EA</td><td contenteditable>$118.20</td></tr>
+    <tr><td contenteditable>OSM0145</td><td contenteditable></td><td contenteditable>25/BX</td><td contenteditable>TEST, MONO, OSOM, DIPSTICK, 25/BX</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>2 BX</td><td contenteditable>$136.30</td></tr>
+    <tr><td contenteditable>42023-104-01</td><td contenteditable></td><td contenteditable>1 EA</td><td contenteditable>APILSOL 5TU/0.1ML 10TEST MDV 1ML</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>3 EA</td><td contenteditable>$318.55</td></tr>
+    <tr><td contenteditable>ALR19200B</td><td contenteditable></td><td contenteditable>24/KT</td><td contenteditable>NO RETURN, TEST, 10 NOVA, COVID, 24EA/BX</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>2 KT</td><td contenteditable>$2,608.88</td></tr>
+    <tr><td contenteditable>D-30395812</td><td contenteditable></td><td contenteditable>100/BX</td><td contenteditable>SYRINGE, L, 3ML, 25GX 1", NEEDLE COMBO</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>20 BX</td><td contenteditable>$125.76</td></tr>
+    <tr><td contenteditable>HUD1935H</td><td contenteditable></td><td contenteditable>1 EA</td><td contenteditable>MASK, OXYGEN, NON-REBREATHER, ADLT, W/VENT</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>2 EA</td><td contenteditable>$2.16</td></tr>
+    <tr><td contenteditable>SYR105001H</td><td contenteditable></td><td contenteditable>1 EA</td><td contenteditable>SYRINGE, LUER LOCK, STERILE, 5ML</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>22 EA</td><td contenteditable>$4.40</td></tr>
+    <tr><td contenteditable>MW-A05031125</td><td contenteditable></td><td contenteditable>1250/CS</td><td contenteditable>COVER, PROBE, SURETEMP, 250/SLEEVE</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>4 CS</td><td contenteditable>$197.27</td></tr>
+    <tr><td contenteditable>75237-077-0D</td><td contenteditable></td><td contenteditable>1 BX</td><td contenteditable>ONDANSETRON 4MG ODT TAB 30/BX</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>2 BX</td><td contenteditable>$29.77</td></tr>
+    <tr><td contenteditable>LCPSQ0540</td><td contenteditable></td><td contenteditable>50/CS</td><td contenteditable>SHEET, DRAPE, 2-PLY TISSUE, WHITE, 40×?</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>4 CS</td><td contenteditable>$115.20</td></tr>
+    <tr><td contenteditable>ABB079835555H</td><td contenteditable></td><td contenteditable>1 EA</td><td contenteditable>SOLUTION, SODCHL 0.9%, 2PRT, 500ML/BAG</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>2 EA</td><td contenteditable>$16.48</td></tr>
+    <tr><td contenteditable>AVM21617</td><td contenteditable></td><td contenteditable>100/BT</td><td contenteditable>STRIP, MULTISTIX 10 SG REAGENT, 100/BT</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>4 BOT</td><td contenteditable>$49.12</td></tr>
+    <tr><td contenteditable>UL1012352</td><td contenteditable></td><td contenteditable>100/BX</td><td contenteditable>SYRINGE, SAFETY, TB, 25GX5/8", 1ML</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>2 BX</td><td contenteditable>$115.20</td></tr>
+    <tr><td contenteditable>VAS-42340U</td><td contenteditable></td><td contenteditable>850/CS</td><td contenteditable>SPECULA, DISPOSABLE, 4.25MM, UNIV, KLEEN</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>3 BX</td><td contenteditable>$49.12</td></tr>
+    <tr><td contenteditable>0143-9857-25</td><td contenteditable></td><td contenteditable>2/5 BX</td><td contenteditable>CEFIXTRAZONE 1GM VL 2.5/BX</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>3 BAG</td><td contenteditable>$66.78</td></tr>
+    <tr><td contenteditable>JYDN0515L4</td><td contenteditable></td><td contenteditable>20/CS</td><td contenteditable>BNDG, ELSTC, MATRIX, STRL, 3"×5YD, LF, HOOK&LP</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>3 CS</td><td contenteditable>$53.55</td></tr>
+    <tr><td contenteditable>JYDN0515LF</td><td contenteditable></td><td contenteditable>10/CS</td><td contenteditable>BNDG, ELSTC, MATRIX, STRL, 6"×5YD, LF, HOOK&LP</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>3 CS</td><td contenteditable>$53.55</td></tr>
+    <tr><td contenteditable>FG100SH</td><td contenteditable></td><td contenteditable>100/BX</td><td contenteditable>FG TOUCH NITRILE EXAM GLOVES, 100CT, SM</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>2 CS</td><td contenteditable>$46.28</td></tr>
+    <tr><td contenteditable>FG100M</td><td contenteditable></td><td contenteditable>100/BX</td><td contenteditable>FG TOUCH NITRILE EXAM GLOVES, 100CT, MD</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>2 CS</td><td contenteditable>$46.28</td></tr>
+    <tr><td contenteditable>B-03906267</td><td contenteditable></td><td contenteditable>100/BX</td><td contenteditable>SYRINGE, TB, 1S, 1ML, 25G × 5/8</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>27 BX</td><td contenteditable>$89.00</td></tr>
+    <tr><td contenteditable>PRM25600H</td><td contenteditable></td><td contenteditable>100/BX</td><td contenteditable>BANDAGE, ADHESIVE, PLASTIC, 1"×3", ST, LF</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>12 BX</td><td contenteditable>$28.62</td></tr>
+  </tbody>
+</table>
+</div>
+
+<button id="toCsv">Download CSV</button>
+
+<script>
+  // Make all body cells editable
+  document.querySelectorAll('#orders tbody td').forEach(td=>td.setAttribute('contenteditable','true'));
+
+  // Quick CSV export
+  document.getElementById('toCsv').onclick = () => {
+    const rows = [...document.querySelectorAll('#orders tr')].map(tr =>
+      [...tr.children].map(td => {
+        const t = td.innerText.replaceAll('"','""');
+        return `"${t}"`;
+      }).join(',')
+    ).join('\n');
+    const blob = new Blob([rows], {type:'text/csv;charset=utf-8;'});
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'orders.csv';
+    a.click();
+  };
+</script>
+</body>
+</html>

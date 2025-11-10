@@ -136,10 +136,3 @@ if(navClose) {
 
 
 
-const navLinks = document.querySelectorAll(".nav_link");
-
-navLinks.forEach(link => {
-  link.addEventListener("click", () => {
-    navMenu.classList.remove("show-sidebar");
-  });
-});
