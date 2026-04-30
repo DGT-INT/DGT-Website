@@ -153,11 +153,15 @@ input {
   object-fit: contain;
 }
 
-.sidebar {
-  position: fixed;
-  width: 100px;
-  height: 100vh;
-  transition: 0.5s;
+.nav {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 100px;
+  background-color: #000;
 }
 
 .nav_menu {
@@ -172,7 +176,6 @@ input {
 
 .nav_list {
   display: flex;
-  flex-direction: row-reverse;
   margin: -2px auto 0 auto;
 }
 
