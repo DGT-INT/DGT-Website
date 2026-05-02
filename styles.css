@@ -190,6 +190,11 @@ input {
   transition: 0.4s;
 }
 
+.nav_toggle i {
+  font-size: 1.4rem;
+  pointer-events: none; /* ensures whole box is clickable */
+}
+
 .nav_toggle {
   position: fixed;
   top: 1.5rem;
@@ -213,11 +218,6 @@ input {
   transform: scale(1.1);
 }
 
-.nav_toggle i {
-  font-size: 1.4rem;
-  pointer-events: none; /* ensures whole box is clickable */
-}
-
 .nav_close {
   font-size: 1.5rem;
   position: absolute;
@@ -225,18 +225,6 @@ input {
   right: 1.25rem;
   cursor: pointer;
   display: none;
-}
-
-/* Hide nav toggle on horizontal / desktop layouts */
-.nav_toggle {
-  display: none;
-}
-
-/* Show nav toggle only on smaller or vertical screens */
-@media screen and (max-width: 768px), screen and (orientation: portrait) {
-  .nav_toggle {
-    display: flex;
-  }
 }
 
 /* Active Link */
@@ -264,6 +252,57 @@ input {
 .nav_link:hover::after {
   width: 60px;
   opacity: 1;
+}
+
+/* Hide nav toggle on horizontal / desktop layouts */
+.nav_toggle {
+  display: none;
+}
+/*=========== Navigation Bar BREAKPOINTS =========*/
+@media screen and (max-width: 950px) {
+  .home_social {
+    padding-right: 6rem !important;
+  }
+
+  .nav_toggle {
+    display: flex;
+  }
+
+  .nav_menu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav_list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  .nav_item {
+    padding-bottom: 2rem;
+  }
+
+  .nav_link {
+    padding: 1rem 0rem;
+    line-height: 1.5;
+  }
+
+  .nal_link.active-link::after,
+  .nav_link:hover::after {
+    bottom: 0;
+  }
+
+  .nav_close {
+    display: block;
+  }
+
+  .nav_toggle {
+    display: flex;
+  }
 }
 
 /*============= Main =============*/
@@ -1044,49 +1083,6 @@ textarea.input {
   .container {
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
-  }
-
-  .sidebar {
-    width: 100%;
-    z-index: 999;
-    transform: translateX(-100%);
-  }
-
-  .show-sidebar {
-    transform: translateX(0);
-  }
-
-  .nav_menu {
-    height: 100%;
-    width: 100%;
-    transform: rotate(0deg) translateX(0);
-    display: flex;
-    justify-content: center;
-  }
-
-  .nav_list {
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .nav_link {
-    padding: 1rem 0;
-    line-height: 1.5;
-  }
-
-  .nal_link.active-link::after,
-  .nav_link:hover::after {
-    bottom: 0;
-  }
-
-  .nav_close {
-    display: block;
-  }
-
-  .nav_toggle {
-    display: flex;
   }
 
   .main {
