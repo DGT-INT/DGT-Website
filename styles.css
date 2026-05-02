@@ -144,7 +144,7 @@ input {
   color: var(--skin-color);
 }
 
-/*============= SIDE BAR =============*/
+/*============= Navigation BAR =============*/
 .social_share {
   width: 90px;
   height: auto;
@@ -162,12 +162,14 @@ input {
 .logo {
   height: 100px;
   background-color: #000;
+  padding-left: 2rem;
 }
 
 .nav_menu {
   position: fixed;
   transform-origin: top left;
   width: 100vh;
+  padding-left: 2rem;
 }
 
 .menu {
@@ -277,6 +279,26 @@ input {
   height: 48px;
 }
 
+.home_social {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  padding-right: 2rem;
+}
+
+.home_social-link,
+.footer_social-link {
+  font-size: 1.08rem;
+  color: var(--text-color);
+  transition: 0.4s;
+  margin-right: 10px;
+}
+
+.home_social-link:hover,
+.footer_social-link:hover {
+  transform: translateY(0.55rem);
+}
+
 /*============= Home Section =============*/
 .home_img {
   display: none;
@@ -298,47 +320,10 @@ input {
   gap: 2rem;
 }
 
-.home_social {
-  position: absolute;
-  top: 1.8rem;
-  left: 0;
-  display: flex;
-  align-items: center;
-  column-gap: 1.5rem;
-}
-
-.home_social-follow {
-  font-weight: var(--font-medium);
-  position: relative;
-}
-
-.home_social-follow::after {
-  content: "";
-  position: absolute;
-  width: 1rem;
-  height: 2px;
-  background-color: var(--title-color);
-  right: -15%;
-  top: 50%;
-}
-
-.home_social-links,
+/* pput this in footer */
 .footer_social-link {
   display: inline-flex;
   column-gap: 1.5rem;
-}
-
-.home_social-link,
-.footer_social-link {
-  font-size: 1.08rem;
-  color: var(--text-color);
-  transition: 0.4s;
-  margin-right: 10px;
-}
-
-.home_social-link:hover,
-.footer_social-link:hover {
-  transform: translateY(0.55rem);
 }
 
 .home_title {
