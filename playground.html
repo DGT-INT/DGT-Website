@@ -25,20 +25,22 @@
   <body>
     <!--========== Navigation Bar =========-->
 
-    <nav class="nav collapsible">
+    <nav class="nav">
       <a href="/"
         ><img
           src="./Images/LogobackgroundRemoved.png"
           alt="DGT-International Logo"
-          class="logo"
+          class="nav_logo"
       /></a>
-      <div class="nav_toggle" id="nav-toggle">
-        <i class="fas fa-bars"></i>
-      </div>
+      <header class="collapsible collapsible__header">
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </header>
 
       <div class="nav_menu">
-        <div class="menu">
-          <ul class="nav_list">
+        <div class="menu collapsible--expanded">
+          <ul class="nav_list collapsible__content">
             <li class="nav_item">
               <a href="#home" class="nav_link active-link">Home</a>
             </li>
@@ -127,12 +129,12 @@
     </nav>
 
     <!--========== MIXITUP FILTER =========-->
-    <script src="mixitup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
 
     <!--========== SWIPER JS =========-->
 
     <!--========== MAIN JS =========-->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="./JavaScript.js"></script>
+    <script src="js/JavaScript.js"></script>
   </body>
 </html>

@@ -145,13 +145,6 @@ input {
 }
 
 /*============= Navigation BAR =============*/
-.social_share {
-  width: 90px;
-  height: auto;
-  display: block;
-  margin: 0 auto -15px auto; /* pushes it visually down */
-  object-fit: contain;
-}
 
 .nav {
   background-color: #000;
@@ -159,7 +152,7 @@ input {
   justify-content: space-between;
 }
 
-.logo {
+.nav_logo {
   height: 100px;
   background-color: #000;
   padding-left: 2rem;
@@ -291,6 +284,10 @@ input {
     line-height: 1.5;
   }
 
+  .nav_link::after {
+    bottom: 0.5rem; /* move underline below text */
+  }
+
   .nal_link.active-link::after,
   .nav_link:hover::after {
     bottom: 0;
@@ -302,6 +299,18 @@ input {
 
   .nav_toggle {
     display: flex;
+  }
+
+  .collapsible--expanded .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
+  }
+
+  .collapsible__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    opacity: 0;
   }
 }
 
