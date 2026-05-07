@@ -251,6 +251,11 @@ input {
 .nav_toggle {
   display: none;
 }
+
+.collapsible {
+  display: flex;
+  justify-content: center;
+}
 /*=========== Navigation Bar BREAKPOINTS =========*/
 @media screen and (max-width: 950px) {
   .home_social {
@@ -263,9 +268,11 @@ input {
 
   .nav_menu {
     height: 100%;
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: center;
+    padding-left: 0;
+    left: 25%;
   }
 
   .nav_list {
