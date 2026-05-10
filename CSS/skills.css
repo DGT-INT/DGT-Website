@@ -192,17 +192,24 @@ input {
 }
 
 .skills_item {
-  background: rgb(124, 168, 124);
+  background: #bcbfb6;
   color: var(--box-color);
   padding: 0.5rem 0.75rem;
   margin: 0.35rem 0;
   border-radius: 0.5rem;
   font-size: 0.95rem;
   display: inline-block;
+  box-shadow: 4px 4px 4px hsl(139, 93%, 24%);
 }
 
 .skills__header.collapsible__header {
   display: flex;
+  align-items: center;
+}
+
+.skills_title.collapsible__heading {
+  margin-bottom: 0;
+  padding-left: 1rem;
 }
 
 .skills__arrow {
