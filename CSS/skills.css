@@ -1,0 +1,258 @@
+/*============= GOOGLE FONTS =============*/
+@import url("https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/*============= VARIABLE CSS =============*/
+:root {
+  /*====== Colors ======*/
+  --hue-color: 110;
+
+  /* HSL Color Made */
+  --skin-color: hsl(139, 93%, 24%);
+  --title-color: hsl(var(--hue-color), 8%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 85%);
+  --body-color: hsl(var(--hue-color), 19%, 5%);
+  --box-color: hsl(var(--hue-color), 14%, 10%);
+  --scrool-bar-color: hsl(var(--hue-color), 12%, 38%);
+  --scrool-thumb-color: hsl(var(--hue-color), 12%, 26%);
+
+  /*====== Font and Typography ======*/
+  --body-font: "Tinos", serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ...*/
+  --biggest-font-size: 3rem;
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.81rem;
+
+  /*====== Font Weight ======*/
+  --font-medium: 500;
+  --font-bold: 600;
+
+  /*====== Margenes Bottom ======*/
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /*====== Z-Index ======*/
+  --z-fixed: 10;
+  --z-modal: 100;
+
+  /* Responsive Typography */
+  @media screen and (max-width: 1024px) {
+    --biggest-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+  }
+}
+
+/*============= BASE =============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+}
+
+/*============= LAYOUT =============*/
+.container {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+}
+
+/*============= REUSABLE CSS CLASSES =============*/
+.home.section {
+  padding-top: 0;
+}
+
+.section {
+  padding: 2.5rem 0 2rem;
+}
+
+.section_title {
+  text-align: center;
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-3);
+}
+
+.section_title::before {
+  content: attr(data-heading);
+  display: block;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  color: var(--skin-color);
+}
+
+/*============= Skills Section =============*/
+.skills {
+  padding: 4rem 2rem;
+}
+
+.section_title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: hsl(139, 93%, 24%);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.skills_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.skills_content {
+  background-color: lightgray;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 8px 8px 8px hsl(139, 93%, 24%);
+  transition: transform 0.2s ease;
+}
+
+.skills_content:hover {
+  transform: translateY(-10px);
+}
+
+.skills_title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: hsl(139, 93%, 24%);
+}
+
+/* Skill list */
+.skills_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills_item {
+  background: #bcbfb6;
+  color: var(--box-color);
+  padding: 0.5rem 0.75rem;
+  margin: 0.35rem 0;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  display: inline-block;
+  box-shadow: 4px 4px 4px hsl(139, 93%, 24%);
+}
+
+.skills__header.collapsible__header {
+  display: flex;
+  align-items: center;
+}
+
+.skills_title.collapsible__heading {
+  margin-bottom: 0;
+  padding-left: 1rem;
+}
+
+.skills__arrow {
+  width: 40px;
+  height: 40px;
+  fill: #000;
+  transform: rotate(-90deg);
+  transition: 0.5s;
+}
+
+.skills__arrow-container {
+  background: #bcbfb6;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills__collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.collapsible--expanded .skills__arrow {
+  transform: rotate(0);
+}
+
+.collapsible--expanded .skills__collapsible__content {
+  display: block;
+  max-height: 100vh;
+  opacity: 1;
+}
+
+/*=========== BREAKPOINTS =========*/
+/* For Large Devices */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+}
