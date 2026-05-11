@@ -215,6 +215,7 @@ input {
   border-radius: 0.25rem;
   padding: 1rem 1.25rem;
   background-color: var(--box-color);
+  border-radius: 1rem;
 }
 
 .experience_box {
