@@ -1,0 +1,361 @@
+/*============= GOOGLE FONTS =============*/
+@import url("https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/*============= VARIABLE CSS =============*/
+:root {
+  /*====== Colors ======*/
+  --hue-color: 110;
+
+  /* HSL Color Made */
+  --skin-color: hsl(139, 93%, 24%);
+  --title-color: hsl(var(--hue-color), 8%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 85%);
+  --body-color: hsl(var(--hue-color), 19%, 5%);
+  --box-color: hsl(var(--hue-color), 14%, 10%);
+  --scrool-bar-color: hsl(var(--hue-color), 12%, 38%);
+  --scrool-thumb-color: hsl(var(--hue-color), 12%, 26%);
+
+  /*====== Font and Typography ======*/
+  --body-font: "Tinos", serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ...*/
+  --biggest-font-size: 3rem;
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.81rem;
+
+  /*====== Font Weight ======*/
+  --font-medium: 500;
+  --font-bold: 600;
+
+  /*====== Margenes Bottom ======*/
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /*====== Z-Index ======*/
+  --z-fixed: 10;
+  --z-modal: 100;
+
+  /* Responsive Typography */
+  @media screen and (max-width: 1024px) {
+    --biggest-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+  }
+}
+
+/*============= BASE =============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+}
+
+/*============= LAYOUT =============*/
+.container {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+}
+
+/*============= REUSABLE CSS CLASSES =============*/
+
+.section {
+  padding: 2.5rem 0 2rem;
+}
+
+.section_title {
+  text-align: center;
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-3);
+}
+
+.section_title::before {
+  content: attr(data-heading);
+  display: block;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  color: var(--skin-color);
+}
+
+/*============= Button =============*/
+.button {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  background-color: var(--skin-color);
+  color: var(--title-color);
+  padding: 0.75rem 1.4rem;
+  border-radius: 2.25rem;
+  font-weight: var(--font-medium);
+  position: relative;
+  z-index: 1;
+}
+
+.button::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--box-color);
+  z-index: -1;
+  transform-origin: center;
+  transform: scale(0);
+  border-radius: 2.25rem;
+  transition: 0.4s;
+}
+
+.button:hover::after {
+  transform: scale(1);
+}
+
+.button_icon {
+  font-size: 1.25rem;
+}
+
+/*============= About Section =============*/
+.about_container {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  align-items: center;
+}
+
+.about_img {
+  width: 480px;
+  height: auto;
+  border-radius: 1.5rem;
+  justify-self: center;
+}
+
+.about_heading {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-75);
+}
+
+.about_description {
+  text-align: justify;
+  padding-right: 4rem;
+  margin-bottom: var(--mb-2);
+}
+
+.about_info {
+  display: grid;
+  grid-template-columns: repeat(3, 140px);
+  column-gap: 0.5rem;
+  margin-bottom: var(--mb-3);
+}
+
+.about_box {
+  text-align: center;
+  border-radius: 0.25rem;
+  padding: 1rem 1.25rem;
+  background-color: var(--box-color);
+}
+
+.experience_box {
+  text-align: left;
+  border-radius: 5px;
+  padding: 1rem 2.25rem;
+  background-color: var(--box-color);
+  margin-bottom: 25px;
+  width: 435px;
+}
+
+.about_icon {
+  font-size: 1.5rem;
+  color: var(--skin-color);
+  margin-bottom: var(--mb-0-75);
+}
+
+.about_title {
+  font-size: var(--small-font-size);
+}
+
+.about_subtitle {
+  font-size: var(--smaller-font-size);
+}
+
+/*======= Experience Section =========*/
+.experience_section {
+  display: flex;
+  justify-content: center;
+}
+
+.experience_box {
+  background-color: var(--box-color);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 700px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.experience_box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5);
+}
+
+.experience_item {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.experience_item::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  color: var(--skin-color);
+  font-size: 0.9rem;
+}
+
+.experience_item h4 {
+  font-size: 1.05rem;
+  color: var(--title-color);
+  margin-bottom: 0.25rem;
+}
+
+.experience_item p {
+  color: var(--text-color);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/*=========== BREAKPOINTS =========*/
+/* For Large Devices */
+@media screen and (max-width: 1408px) {
+  .container {
+    margin-left: var(--mb-2-5);
+    margin-right: var(--mb-2-5);
+  }
+}
+
+@media screen and (max-width: 1216px) {
+  .about_container {
+    column-gap: 2.5rem;
+  }
+
+  .about_description {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+
+  .about_container {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+  }
+
+  .about_img {
+    width: 350px;
+  }
+
+  .about_data {
+    text-align: center;
+  }
+
+  .about_info {
+    justify-content: center;
+  }
+
+  .about_box {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .about_description {
+    padding: 0rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 778px) {
+  .about_img {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+
+  .about_info {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 0.5rem;
+  }
+}
