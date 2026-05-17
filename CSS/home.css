@@ -1,0 +1,397 @@
+/*============= GOOGLE FONTS =============*/
+@import url("https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/*============= VARIABLE CSS =============*/
+:root {
+  /*====== Colors ======*/
+  --hue-color: 110;
+
+  /* HSL Color Made */
+  --skin-color: hsl(139, 93%, 24%);
+  --title-color: hsl(var(--hue-color), 8%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 85%);
+  --body-color: hsl(var(--hue-color), 19%, 5%);
+  --box-color: hsl(var(--hue-color), 14%, 10%);
+  --scrool-bar-color: hsl(var(--hue-color), 12%, 38%);
+  --scrool-thumb-color: hsl(var(--hue-color), 12%, 26%);
+
+  /*====== Font and Typography ======*/
+  --body-font: "Tinos", serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ...*/
+  --biggest-font-size: 3rem;
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.81rem;
+
+  /*====== Font Weight ======*/
+  --font-medium: 500;
+  --font-bold: 600;
+
+  /*====== Margenes Bottom ======*/
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /*====== Z-Index ======*/
+  --z-fixed: 10;
+  --z-modal: 100;
+
+  /* Responsive Typography */
+  @media screen and (max-width: 1024px) {
+    --biggest-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+  }
+}
+
+/*============= BASE =============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+}
+
+/*============= LAYOUT =============*/
+.container {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+}
+
+/*============= REUSABLE CSS CLASSES =============*/
+.home.section {
+  padding-top: 0;
+}
+
+.section {
+  padding: 2.5rem 0 2rem;
+}
+
+.section_title {
+  text-align: center;
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-3);
+}
+
+.section_title::before {
+  content: attr(data-heading);
+  display: block;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  color: var(--skin-color);
+}
+
+.btn_share {
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  padding-bottom: 0; /* Remove extra padding */
+}
+
+/*============= Home Section =============*/
+.home_img {
+  display: none;
+}
+
+.home {
+  background: url("./Images/Daniel.jpeg") no-repeat right center;
+  background-size: 600px auto; /* Set width to 600px, height auto */
+  background-color: var(--body-color); /* fallback background */
+  height: 100vh;
+}
+
+.home_container {
+  position: relative;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.home_social {
+  position: absolute;
+  top: 1.8rem;
+  left: 0;
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.home_social-follow {
+  font-weight: var(--font-medium);
+  position: relative;
+}
+
+.home_social-follow::after {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 2px;
+  background-color: var(--title-color);
+  right: -15%;
+  top: 50%;
+}
+
+.home_social-links,
+.footer_social-link {
+  display: inline-flex;
+  column-gap: 1.5rem;
+}
+
+.home_social-link,
+.footer_social-link {
+  font-size: 1.08rem;
+  color: var(--text-color);
+  transition: 0.4s;
+  margin-right: 10px;
+}
+
+.home_social-link:hover,
+.footer_social-link:hover {
+  transform: translateY(0.55rem);
+}
+
+.home_title {
+  font-size: var(--biggest-font-size);
+}
+
+.home_subtitle {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-75);
+}
+
+.home_description {
+  max-width: 450px;
+  margin-bottom: var(--mb-2);
+}
+
+#Letter {
+  fill: var(--skin-color);
+  color: var(--skin-color);
+}
+
+#user {
+  fill: white;
+}
+
+.info_item {
+  display: flex;
+  gap: 10px;
+}
+
+.my_info {
+  display: flex;
+  column-gap: 1.8rem;
+  position: absolute;
+  left: 0;
+  bottom: -1.2rem;
+}
+
+.info_item {
+  display: flex;
+  align-items: center;
+}
+
+.info_title,
+.info_subtitle {
+  font-size: var(--small-font-size);
+}
+
+.info_title {
+  font-weight: var(--font-medium);
+}
+
+.info_icon {
+  font-size: 1.8rem;
+  color: var(--skin-color);
+  margin-right: var(--mb-0-75);
+}
+
+/*============= Button =============*/
+.button {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  background-color: var(--skin-color);
+  color: var(--title-color);
+  padding: 0.75rem 1.4rem;
+  border-radius: 2.25rem;
+  font-weight: var(--font-medium);
+  position: relative;
+  z-index: 1;
+}
+
+.button::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--box-color);
+  z-index: -1;
+  transform-origin: center;
+  transform: scale(0);
+  border-radius: 2.25rem;
+  transition: 0.4s;
+}
+
+.button:hover::after {
+  transform: scale(1);
+}
+
+.button_icon {
+  font-size: 1.25rem;
+}
+
+/*=========== BREAKPOINTS =========*/
+/* For Large Devices */
+@media screen and (max-width: 1408px) {
+  .container {
+    margin-left: var(--mb-2-5);
+    margin-right: var(--mb-2-5);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+
+  .home_img {
+    width: 200px;
+  }
+
+  .home_title {
+    font-size: var(--h1-font-size);
+  }
+
+  .home_subtitle {
+    font-size: var(--normal-font-size);
+  }
+}
+
+/* === HOME: stack image above text on portrait & small screens === */
+@media screen and (max-width: 900px), screen and (orientation: portrait) {
+  .home {
+    background-image: none; /* stop using the bg image */
+    height: auto;
+    padding: 6rem 0 2rem;
+  }
+
+  .home_container {
+    display: grid;
+    grid-template-columns: 1fr; /* single column */
+    grid-template-rows: auto;
+    row-gap: 2rem;
+    text-align: center;
+  }
+
+  .home_img {
+    display: block; /* override default display:none */
+    justify-self: center;
+    width: min(520px, 92%);
+    border-radius: 12px;
+    margin: 0 auto 0.75rem;
+  }
+
+  .home_data {
+    padding: 0 1.25rem;
+  }
+
+  .home_description {
+    margin: 0 auto 1.25rem;
+    max-width: 520px;
+  }
+
+  /* keep social + footer tidy in portrait */
+  .home_social {
+    position: static;
+    justify-content: center;
+    gap: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* keep the email bar from overlapping */
+  .my_info {
+    position: static;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
