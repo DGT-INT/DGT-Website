@@ -243,28 +243,31 @@ input {
   color: var(--title-color);
 }
 
-/*=========== BREAKPOINTS =========*/
+/*=========== FOOTER BREAKPOINTS =========*/
 
 @media screen and (max-width: 778px) {
   .footer_container {
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 3rem;
-  }
-
-  .footer_socials {
-    justify-self: start;
-  }
-
-  .footer_links {
-    flex-direction: column;
     row-gap: 1rem;
   }
 
+  .footer_socials {
+    grid-column: 1 / -1;
+    justify-content: space-evenly;
+  }
+
+  .footer_links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+
   .footer_bg {
-    padding: 2rem 0 3rem;
+    padding: 1rem 0 1rem;
   }
 
   .footer_copy {
-    margin-top: var(--mb-3);
+    margin-top: 2rem;
   }
 }
