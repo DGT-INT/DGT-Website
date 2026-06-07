@@ -311,6 +311,9 @@ input {
   .collapsible--expanded .collapsible__content {
     max-height: 100vh;
     opacity: 1;
+    background: gray;
+    left: 0;
+    width: 100%;
   }
 
   .collapsible__content {
