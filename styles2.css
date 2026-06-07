@@ -159,9 +159,7 @@ input {
 }
 
 .nav_menu {
-  position: fixed;
   transform-origin: top left;
-  width: 100vh;
   padding-left: 2rem;
 }
 
@@ -273,6 +271,8 @@ input {
     justify-content: center;
     padding-left: 0;
     left: 25%;
+    position: fixed;
+    width: 100vh;
   }
 
   .nav_list {
