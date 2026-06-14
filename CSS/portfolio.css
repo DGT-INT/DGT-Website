@@ -190,7 +190,7 @@ input {
   font-size: 1.25rem;
 }
 
-/*============= Work Section =============*/
+/*============= Portfolio/Work Section =============*/
 .work_container {
   grid-template-columns: repeat(3, 330px);
   gap: 1.8rem;
