@@ -251,7 +251,6 @@ input {
 }
 
 .collapsible {
-  display: flex;
   justify-content: center;
 }
 /*=========== Navigation Bar BREAKPOINTS =========*/
